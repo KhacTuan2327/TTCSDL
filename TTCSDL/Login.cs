@@ -37,29 +37,30 @@ namespace TTCSDL
         {
             
         }
+        Modify modify = new Modify();
         private void dangNhap_Click(object sender, EventArgs e)
         {
-            SqlConnection comn = new SqlConnection(@"Data Source=DESKTOP-CM6N3SA\SQLEXPRESS;Initial Catalog=QUANLYDETAI;Integrated Security=True");
-            try
+            string tk = user.Text;
+            string mk = pass.Text;
+            if(tk.Trim() == "")
             {
-                comn.Open();
-                string tk = user.Text;
-                string mk = pass.Text;
-                string sql = "select * from NGUOIDUNG where TAIKHOAN = '" + tk + "' and MATKHAU = '" + mk + "'";
-                SqlCommand cmd = new SqlCommand(sql, comn);
-                SqlDataReader data = cmd.ExecuteReader();
-                if(data.Read() == true)
+                MessageBox.Show("Vui lòng nhập tài khoản!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if(mk.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                string query = "select * from NGUOIDUNG where TAIKHOAN = '" + tk + "' and MATKHAU = '" + mk + "'";
+                if(modify.UserLogins(query).Count != 0)
                 {
                     MessageBox.Show("Đăng nhập thành công!");
                 }
                 else
                 {
-                    MessageBox.Show("Đăng nhập thất bại!");
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi hệ thống !");
             }
         }
         private void checkBox1_CheckedChanged(object sender, EventArgs e) //hiển thị mật khẩu
@@ -77,7 +78,7 @@ namespace TTCSDL
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e) //Quên mật khẩu
         {
             this.Hide();
-            QuenMatKhau showQuenMk = new QuenMatKhau();
+            ForgotPass showQuenMk = new ForgotPass();
             showQuenMk.ShowDialog();
             this.Close();
         }
