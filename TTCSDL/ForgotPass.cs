@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace TTCSDL
 {
-    public partial class QuenMatKhau : Form
+    public partial class ForgotPass : Form
     {
-        public QuenMatKhau()
+        public ForgotPass()
         {
             InitializeComponent();
         }

@@ -10,3 +10,15 @@ C:\Users\Dell service\source\repos\QL_DETAI\TTCSDL\obj\Debug\TTCSDL.exe
 C:\Users\Dell service\source\repos\QL_DETAI\TTCSDL\obj\Debug\TTCSDL.pdb
 C:\Users\Dell service\source\repos\QL_DETAI\TTCSDL\obj\Debug\TTCSDL.Login.resources
 C:\Users\Dell service\source\repos\QL_DETAI\TTCSDL\obj\Debug\TTCSDL.QuenMatKhau.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\bin\Debug\TTCSDL.exe.config
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\bin\Debug\TTCSDL.exe
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\bin\Debug\TTCSDL.pdb
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.csproj.AssemblyReference.cache
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.csproj.SuggestedBindingRedirects.cache
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.Login.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.Properties.Resources.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.ForgotPass.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.csproj.GenerateResource.cache
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.csproj.CoreCompileInputs.cache
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.exe
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.pdb
