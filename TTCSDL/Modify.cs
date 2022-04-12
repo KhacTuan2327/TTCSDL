@@ -21,6 +21,7 @@ namespace TTCSDL
             using(SqlConnection sqlConnection = Connection.GetSqlConnection()) //Sử dụng lệnh trong ngoặc nhọn, sau khi thực hiện xong thì 
                 //xóa toàn bộ đối tượng đã khởi tạo trong ngoặc
             {
+                
                 sqlConnection.Open();
                 sqlCommand = new SqlCommand(query, sqlConnection);
                 dataReader = sqlCommand.ExecuteReader(); //Lệnh thực thi đọc dữ liệu bảng

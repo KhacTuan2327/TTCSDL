@@ -45,16 +45,16 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(-3, -5);
+            this.pictureBox1.Location = new System.Drawing.Point(3, 1);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(891, 508);
+            this.pictureBox1.Size = new System.Drawing.Size(1095, 508);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(249, 174);
+            this.pictureBox2.Location = new System.Drawing.Point(408, 150);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(51, 45);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -65,7 +65,7 @@
             // user
             // 
             this.user.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.user.Location = new System.Drawing.Point(306, 174);
+            this.user.Location = new System.Drawing.Point(465, 150);
             this.user.Name = "user";
             this.user.Size = new System.Drawing.Size(296, 45);
             this.user.TabIndex = 1;
@@ -75,7 +75,7 @@
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(249, 243);
+            this.pictureBox3.Location = new System.Drawing.Point(408, 219);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(51, 45);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -85,18 +85,19 @@
             // pass
             // 
             this.pass.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pass.Location = new System.Drawing.Point(306, 243);
+            this.pass.Location = new System.Drawing.Point(465, 219);
             this.pass.Name = "pass";
             this.pass.PasswordChar = '*';
             this.pass.Size = new System.Drawing.Size(296, 45);
             this.pass.TabIndex = 2;
             this.pass.TextChanged += new System.EventHandler(this.pass_TextChanged);
+            this.pass.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pass_KeyDown);
             // 
             // checkShow
             // 
             this.checkShow.AutoSize = true;
             this.checkShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkShow.Location = new System.Drawing.Point(306, 315);
+            this.checkShow.Location = new System.Drawing.Point(465, 291);
             this.checkShow.Name = "checkShow";
             this.checkShow.Size = new System.Drawing.Size(144, 22);
             this.checkShow.TabIndex = 5;
@@ -108,7 +109,7 @@
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.Location = new System.Drawing.Point(493, 315);
+            this.linkLabel1.Location = new System.Drawing.Point(652, 291);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(109, 18);
             this.linkLabel1.TabIndex = 5;
@@ -118,9 +119,9 @@
             // 
             // dangNhap
             // 
-            this.dangNhap.BackColor = System.Drawing.Color.MediumSpringGreen;
+            this.dangNhap.BackColor = System.Drawing.Color.PaleTurquoise;
             this.dangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dangNhap.Location = new System.Drawing.Point(306, 351);
+            this.dangNhap.Location = new System.Drawing.Point(465, 327);
             this.dangNhap.Name = "dangNhap";
             this.dangNhap.Size = new System.Drawing.Size(127, 45);
             this.dangNhap.TabIndex = 3;
@@ -132,7 +133,7 @@
             // 
             this.exit.BackColor = System.Drawing.Color.Tomato;
             this.exit.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exit.Location = new System.Drawing.Point(475, 351);
+            this.exit.Location = new System.Drawing.Point(634, 327);
             this.exit.Name = "exit";
             this.exit.Size = new System.Drawing.Size(127, 45);
             this.exit.TabIndex = 4;
@@ -144,7 +145,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(888, 498);
+            this.ClientSize = new System.Drawing.Size(1096, 498);
             this.Controls.Add(this.exit);
             this.Controls.Add(this.dangNhap);
             this.Controls.Add(this.linkLabel1);

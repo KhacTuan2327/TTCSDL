@@ -22,3 +22,4 @@ C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.csproj.Generat
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.csproj.CoreCompileInputs.cache
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.exe
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.pdb
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.MainForm.resources

@@ -10,6 +10,7 @@ namespace TTCSDL
     {
         private string user;
         private string password;
+        private string email;
 
         public UserLogin()
         {
