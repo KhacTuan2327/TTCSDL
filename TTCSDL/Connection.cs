@@ -10,7 +10,7 @@ namespace TTCSDL
 {
     internal class Connection
     {
-        private static string stringConnection = @"Data Source=DESKTOP-CM6N3SA\SQLEXPRESS;Initial Catalog=QUANLYDETAI;Integrated Security=True";
+        private static string stringConnection = @"Data Source=DESKTOP-CM6N3SA\SQLEXPRESS;Initial Catalog=QL_DETAI;Integrated Security=True";
         public static SqlConnection GetSqlConnection()
         {
             return new SqlConnection(stringConnection);

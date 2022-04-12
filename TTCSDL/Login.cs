@@ -52,10 +52,13 @@ namespace TTCSDL
             }
             else
             {
-                string query = "select * from NGUOIDUNG where TAIKHOAN = '" + tk + "' and MATKHAU = '" + mk + "'";
+                string query = "select * from DANGNHAP where TAIKHOAN = '" + tk + "' and MATKHAU = '" + mk + "'";
                 if(modify.UserLogins(query).Count != 0)
                 {
-                    MessageBox.Show("Đăng nhập thành công!");
+                    this.Hide();
+                    MainForm showMainMenu = new MainForm();
+                    showMainMenu.ShowDialog();
+                    this.Close();
                 }
                 else
                 {
@@ -88,5 +91,12 @@ namespace TTCSDL
             Application.Exit();
         }
 
+        private void pass_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                dangNhap.Focus();
+            }
+        }
     }
 }

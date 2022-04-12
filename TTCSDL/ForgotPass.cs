@@ -17,29 +17,25 @@ namespace TTCSDL
         {
             InitializeComponent();
         }
+        Modify modify = new Modify();
         private void layMk_Click(object sender, EventArgs e)
         {
-            SqlConnection comn = new SqlConnection(@"Data Source=DESKTOP-CM6N3SA\SQLEXPRESS;Initial Catalog=QUANLYDETAI;Integrated Security=True");
-            try
+            string eml = email.Text;
+            if (eml.Trim() == "")
             {
-                comn.Open();
-                string userMail = email.Text;
-                string mk = passW.Text;
-                string sql = "select EMAIL from NGUOIDUNG where EMAIL = '" + userMail + "'";
-                SqlCommand cmd = new SqlCommand(sql, comn);
-                SqlDataReader data = cmd.ExecuteReader();
-                if (data.Read() == true)
+                MessageBox.Show("Vui lòng nhập email!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                string queryEmail = "select * from DANGNHAP where EMAIL = '" + eml + "'";
+                if (modify.UserLogins(queryEmail).Count != 0)
                 {
-                    passW.Text = "123456";
+                    passW.Text = "";
                 }
                 else
                 {
-                    MessageBox.Show("Email không tồn tại!");
+                    MessageBox.Show("Email này không tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi hệ thống !");
             }
         }
 
