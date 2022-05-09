@@ -40,31 +40,7 @@ namespace TTCSDL
         Modify modify = new Modify();
         private void dangNhap_Click(object sender, EventArgs e)
         {
-            string tk = user.Text;
-            string mk = pass.Text;
-            if(tk.Trim() == "")
-            {
-                MessageBox.Show("Vui lòng nhập tài khoản!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else if(mk.Trim() == "")
-            {
-                MessageBox.Show("Vui lòng nhập mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                string query = "select * from DANGNHAP where TAIKHOAN = '" + tk + "' and MATKHAU = '" + mk + "'";
-                if(modify.UserLogins(query).Count != 0)
-                {
-                    this.Hide();
-                    MainForm showMainMenu = new MainForm();
-                    showMainMenu.ShowDialog();
-                    this.Close();
-                }
-                else
-                {
-                    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
+            
         }
         private void checkBox1_CheckedChanged(object sender, EventArgs e) //hiển thị mật khẩu
         {
@@ -96,6 +72,40 @@ namespace TTCSDL
             if (e.KeyCode == Keys.Enter)
             {
                 dangNhap.Focus();
+            }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dangNhap_Click_1(object sender, EventArgs e)
+        {
+            string tk = user.Text;
+            string mk = pass.Text;
+            if (tk.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập tài khoản!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (mk.Trim() == "")
+            {
+                MessageBox.Show("Vui lòng nhập mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                string query = "select * from DANGNHAP where TAIKHOAN = '" + tk + "' and MATKHAU = '" + mk + "'";
+                if (modify.UserLogins(query).Count != 0)
+                {
+                    this.Hide();
+                    MainForm showMainMenu = new MainForm();
+                    showMainMenu.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không chính xác!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
         }
     }

@@ -18,7 +18,7 @@ namespace TTCSDL
             InitializeComponent();
         }
         Modify modify = new Modify();
-        private void layMk_Click(object sender, EventArgs e)
+        private void LayMk_Click(object sender, EventArgs e)
         {
             string eml = email.Text;
             if (eml.Trim() == "")
