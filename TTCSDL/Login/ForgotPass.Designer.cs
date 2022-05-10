@@ -1,4 +1,6 @@
-﻿namespace TTCSDL
+﻿using System;
+
+namespace TTCSDL
 {
     partial class ForgotPass
     {
@@ -146,6 +148,11 @@
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void layMk_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion

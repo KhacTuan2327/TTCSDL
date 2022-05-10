@@ -95,12 +95,6 @@ namespace TTCSDL
         {
 
         }
-
-        private void btnKhoa_Click_1(object sender, EventArgs e)
-        {
-            showSubMenu(panelKhoa);
-        }
-
         private void btnDeTai_Click_1(object sender, EventArgs e)
         {
             showSubMenu(panelDeTai);
@@ -114,9 +108,66 @@ namespace TTCSDL
         private void đăngXuấtToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Login showLogin = new Login();
+            LoginForm showLogin = new LoginForm();
             showLogin.ShowDialog();
             this.Close();
+        }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if(activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false; //luôn phải có khi mở form mới. Là dạng biểu mẫu cao cấp?
+            childForm.FormBorderStyle = FormBorderStyle.None; //luôn 
+            childForm.Dock = DockStyle.Fill; //luôn
+            panel_main.Controls.Add(childForm);
+            panel_main.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+        
+     
+  
+        private void btnkhoa_Click(object sender, EventArgs e)
+        {
+            showSubMenu(panelKhoa);
+        }
+
+        private void btndetai_Click_3(object sender, EventArgs e)
+        {
+            showSubMenu(panelDeTai);
+        }
+
+        private void panelkhoa1_Click(object sender, EventArgs e)
+        {
+            openChildForm(new QuanLyKhoa());
+        }
+
+        private void panelkhoa2_Click_1(object sender, EventArgs e)
+        {
+            openChildForm(new QuanLyBoMon());
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
