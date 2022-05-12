@@ -30,7 +30,7 @@ namespace TTCSDL
             if (modify.UserLogins(query).Count != 0)
             {
                 this.Hide();
-                MainForm showMainMenu = new MainForm();
+                Main showMainMenu = new Main();
                 showMainMenu.ShowDialog();
                 this.Close();
             }
@@ -55,7 +55,7 @@ namespace TTCSDL
         private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
         {
             this.Hide();
-            ForgotPassForm showQuenMk = new ForgotPassForm();
+            ForgotPass showQuenMk = new ForgotPass();
             showQuenMk.ShowDialog();
             this.Close();
         }
