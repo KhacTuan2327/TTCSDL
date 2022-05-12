@@ -55,7 +55,7 @@ namespace TTCSDL
         Modify modify = new Modify();
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            ForgotPassForm fpf = new ForgotPassForm();
+            ForgotPass fpf = new ForgotPass();
             if(newPass.Text == verifyPass.Text)
             {
                 if(MessageBox.Show("Bạn có muốn đổi mật khẩu?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
