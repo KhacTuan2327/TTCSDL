@@ -14,7 +14,6 @@ C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\bin\Debug\TTCSDL.exe.config
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\bin\Debug\TTCSDL.exe
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\bin\Debug\TTCSDL.pdb
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.csproj.AssemblyReference.cache
-C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.csproj.SuggestedBindingRedirects.cache
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.Properties.Resources.resources
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.ForgotPass.resources
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.csproj.GenerateResource.cache
@@ -164,3 +163,9 @@ C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.QuanLyBoMon.re
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.QuanLyKhoa.resources
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.exe.licenses
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.csproj.CopyComplete
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.HomeForm.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.ThongTin.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.DeTai.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.NhanSu.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.PheDuyet.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.ThongKe.resources

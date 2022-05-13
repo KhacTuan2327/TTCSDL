@@ -35,9 +35,13 @@
   <ItemGroup>
     <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.TreeMap.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.Utils.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraBars.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
@@ -68,6 +72,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MenuItem\DeTai.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuItem\DeTai.Designer.cs">
+      <DependentUpon>DeTai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuItem\HomeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuItem\HomeForm.Designer.cs">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm\ForgotPass.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -102,11 +118,23 @@
     <Compile Include="LoginForm\NewPassForm.Designer.cs">
       <DependentUpon>NewPassForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MenuItem\NhanSu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuItem\NhanSu.Designer.cs">
+      <DependentUpon>NhanSu.cs</DependentUpon>
+    </Compile>
     <Compile Include="NhanSuForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NhanSuForm.Designer.cs">
       <DependentUpon>NhanSuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuItem\PheDuyet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuItem\PheDuyet.Designer.cs">
+      <DependentUpon>PheDuyet.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -123,6 +151,24 @@
       <DependentUpon>QuanLyKhoa.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm\UserLogin.cs" />
+    <Compile Include="MenuItem\ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuItem\ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuItem\ThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuItem\ThongTin.Designer.cs">
+      <DependentUpon>ThongTin.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="MenuItem\DeTai.resx">
+      <DependentUpon>DeTai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuItem\HomeForm.resx">
+      <DependentUpon>HomeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginForm\ForgotPass.resx">
       <DependentUpon>ForgotPass.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,8 +184,14 @@
     <EmbeddedResource Include="LoginForm\NewPassForm.resx">
       <DependentUpon>NewPassForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MenuItem\NhanSu.resx">
+      <DependentUpon>NhanSu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NhanSuForm.resx">
       <DependentUpon>NhanSuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuItem\PheDuyet.resx">
+      <DependentUpon>PheDuyet.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -156,6 +208,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Khoa_BoMon\QuanLyKhoa.resx">
       <DependentUpon>QuanLyKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuItem\ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuItem\ThongTin.resx">
+      <DependentUpon>ThongTin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
