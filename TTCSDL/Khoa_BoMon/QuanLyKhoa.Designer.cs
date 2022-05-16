@@ -153,7 +153,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(112, 596);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 16);
+            this.label1.Size = new System.Drawing.Size(51, 20);
             this.label1.TabIndex = 16;
             this.label1.Text = "label1";
             // 
@@ -165,7 +165,7 @@
             this.lbsdt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.lbsdt.Location = new System.Drawing.Point(68, 166);
             this.lbsdt.Name = "lbsdt";
-            this.lbsdt.Size = new System.Drawing.Size(146, 25);
+            this.lbsdt.Size = new System.Drawing.Size(173, 30);
             this.lbsdt.TabIndex = 30;
             this.lbsdt.Text = "Số Điện Thoại";
             // 
@@ -177,7 +177,7 @@
             this.lbtenkhoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.lbtenkhoa.Location = new System.Drawing.Point(513, 38);
             this.lbtenkhoa.Name = "lbtenkhoa";
-            this.lbtenkhoa.Size = new System.Drawing.Size(107, 25);
+            this.lbtenkhoa.Size = new System.Drawing.Size(125, 30);
             this.lbtenkhoa.TabIndex = 20;
             this.lbtenkhoa.Text = "Tên Khoa";
             // 
@@ -189,7 +189,7 @@
             this.lbdiachi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.lbdiachi.Location = new System.Drawing.Point(68, 78);
             this.lbdiachi.Name = "lbdiachi";
-            this.lbdiachi.Size = new System.Drawing.Size(85, 25);
+            this.lbdiachi.Size = new System.Drawing.Size(102, 30);
             this.lbdiachi.TabIndex = 16;
             this.lbdiachi.Text = "Địa Chỉ";
             // 
@@ -201,7 +201,7 @@
             this.lbchunhiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.lbchunhiem.Location = new System.Drawing.Point(68, 121);
             this.lbchunhiem.Name = "lbchunhiem";
-            this.lbchunhiem.Size = new System.Drawing.Size(120, 25);
+            this.lbchunhiem.Size = new System.Drawing.Size(145, 30);
             this.lbchunhiem.TabIndex = 17;
             this.lbchunhiem.Text = "Chủ Nhiệm";
             // 
@@ -381,7 +381,7 @@
             this.lbmakhoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
             this.lbmakhoa.Location = new System.Drawing.Point(68, 38);
             this.lbmakhoa.Name = "lbmakhoa";
-            this.lbmakhoa.Size = new System.Drawing.Size(101, 25);
+            this.lbmakhoa.Size = new System.Drawing.Size(120, 30);
             this.lbmakhoa.TabIndex = 15;
             this.lbmakhoa.Text = "Mã Khoa";
             // 
@@ -496,6 +496,7 @@
             this.dataKhoa.ThemeStyle.RowsStyle.Height = 28;
             this.dataKhoa.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataKhoa.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataKhoa.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataKhoa_CellContentClick_1);
             // 
             // Column4
             // 
@@ -503,7 +504,7 @@
             this.Column4.HeaderText = "...";
             this.Column4.MinimumWidth = 8;
             this.Column4.Name = "Column4";
-            this.Column4.Width = 51;
+            this.Column4.Width = 62;
             // 
             // QuanLyKhoa
             // 

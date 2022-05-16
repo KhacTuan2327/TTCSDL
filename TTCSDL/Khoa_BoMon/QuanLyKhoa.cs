@@ -169,5 +169,10 @@ namespace TTCSDL
         {
 
         }
+
+        private void dataKhoa_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -97,7 +97,8 @@ namespace TTCSDL
             pnlNav.Top = btnDeTai.Top;
             btnDeTai.BackColor = Color.CadetBlue;
             //
-            showLoad(new DeTai(), "Đề tài");
+            DataTable dt = new DataTable();
+            showLoad(new DeTai(dt.Rows[0][0].ToString(), dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), dt.Rows[0][3].ToString(), dt.Rows[0][4].ToString(), dt.Rows[0][5].ToString(), dt.Rows[0][6].ToString()  ), "Đề tài");
         }
 
         private void btnNSu_Click(object sender, EventArgs e)
@@ -106,7 +107,7 @@ namespace TTCSDL
             pnlNav.Top = btnNSu.Top;
             btnNSu.BackColor = Color.CadetBlue;
             //
-            showLoad(new DeTai(), "Nhân sự");
+            showLoad(new NhanSu(), "Nhân sự");
         }
 
         private void btnTke_Click(object sender, EventArgs e)
@@ -115,7 +116,7 @@ namespace TTCSDL
             pnlNav.Top = btnTke.Top;
             btnTke.BackColor = Color.CadetBlue;
             //
-            showLoad(new DeTai(), "Thống kê");
+            showLoad(new ThongKe(), "Thống kê");
         }
 
         private void btnPheDuyet_Click(object sender, EventArgs e)
@@ -124,7 +125,7 @@ namespace TTCSDL
             pnlNav.Top = btnPheDuyet.Top;
             btnPheDuyet.BackColor = Color.CadetBlue;
             //
-            showLoad(new DeTai(), "Phê duyệt");
+            showLoad(new PheDuyet(), "Phê duyệt");
         }
 
         private void btnHome_Leave(object sender, EventArgs e)
@@ -161,5 +162,12 @@ namespace TTCSDL
         {
             btnLogout.BackColor = Color.Teal;
         }
+
+        private void pnlLoad_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+       
     }
 }

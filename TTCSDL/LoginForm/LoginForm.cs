@@ -27,6 +27,7 @@ namespace TTCSDL
             string tk = user.Text;
             string mk = pass.Text;
             string query = "select * from DANGNHAP where TAIKHOAN = '" + tk + "' and MATKHAU = '" + mk + "'";
+            DataTable dt = new DataTable();
             if (modify.UserLogins(query).Count != 0)
             {
                 this.Hide();
