@@ -21,7 +21,6 @@ namespace TTCSDL
         }
         public NewPassForm(string mess)
         {
-            InitializeComponent();
             this.messMail = mess;
         }
         //Hiển thị mật khẩu

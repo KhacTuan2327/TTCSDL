@@ -32,6 +32,8 @@ namespace TTCSDL
             {
                 this.Hide();
                 Main showMainMenu = new Main();
+                showMainMenu.Width = 1581;
+                showMainMenu.Height = 768;
                 showMainMenu.ShowDialog();
                 this.Close();
             }

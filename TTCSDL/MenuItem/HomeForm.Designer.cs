@@ -32,11 +32,14 @@ namespace TTCSDL
             DevExpress.XtraEditors.TileItemElement tileItemElement1 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement2 = new DevExpress.XtraEditors.TileItemElement();
             DevExpress.XtraEditors.TileItemElement tileItemElement3 = new DevExpress.XtraEditors.TileItemElement();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             this.tileNavCategory1 = new DevExpress.XtraBars.Navigation.TileNavCategory();
             this.tileBarItem4 = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.tileBarItem3 = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.tileBarItem2 = new DevExpress.XtraBars.Navigation.TileBarItem();
             this.tileNavCategory2 = new DevExpress.XtraBars.Navigation.TileNavCategory();
+            this.imageSlider1 = new DevExpress.XtraEditors.Controls.ImageSlider();
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).BeginInit();
             this.SuspendLayout();
             // 
             // tileNavCategory1
@@ -76,15 +79,36 @@ namespace TTCSDL
             // 
             this.tileNavCategory2.Tile.DropDownOptions.BeakColor = System.Drawing.Color.Empty;
             // 
+            // imageSlider1
+            // 
+            this.imageSlider1.AnimationTime = 1;
+            this.imageSlider1.AutoSlide = DevExpress.XtraEditors.Controls.AutoSlide.Backward;
+            this.imageSlider1.CurrentImageIndex = 0;
+            this.imageSlider1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images"))));
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images1"))));
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images2"))));
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images3"))));
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images4"))));
+            this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images5"))));
+            this.imageSlider1.Location = new System.Drawing.Point(0, 0);
+            this.imageSlider1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.imageSlider1.Name = "imageSlider1";
+            this.imageSlider1.Size = new System.Drawing.Size(1362, 718);
+            this.imageSlider1.TabIndex = 0;
+            this.imageSlider1.Text = "imageSlider1";
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1362, 718);
+            this.Controls.Add(this.imageSlider1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "HomeForm";
             this.Text = "HomeForm";
+            ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -96,5 +120,6 @@ namespace TTCSDL
         private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem3;
         private DevExpress.XtraBars.Navigation.TileBarItem tileBarItem2;
         private DevExpress.XtraBars.Navigation.TileNavCategory tileNavCategory2;
+        private DevExpress.XtraEditors.Controls.ImageSlider imageSlider1;
     }
 }

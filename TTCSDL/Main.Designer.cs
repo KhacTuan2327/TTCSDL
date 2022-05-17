@@ -66,18 +66,16 @@ namespace TTCSDL
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(246, 960);
+            this.panel1.Size = new System.Drawing.Size(219, 768);
             this.panel1.TabIndex = 0;
             // 
             // pnlNav
             // 
             this.pnlNav.BackColor = System.Drawing.Color.White;
-            this.pnlNav.Location = new System.Drawing.Point(0, 212);
-            this.pnlNav.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnlNav.Location = new System.Drawing.Point(0, 170);
             this.pnlNav.Name = "pnlNav";
-            this.pnlNav.Size = new System.Drawing.Size(3, 85);
+            this.pnlNav.Size = new System.Drawing.Size(3, 68);
             this.pnlNav.TabIndex = 1;
             // 
             // btnPheDuyet
@@ -92,11 +90,10 @@ namespace TTCSDL
             this.btnPheDuyet.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnPheDuyet.IconSize = 40;
             this.btnPheDuyet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPheDuyet.Location = new System.Drawing.Point(0, 637);
-            this.btnPheDuyet.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnPheDuyet.Location = new System.Drawing.Point(0, 510);
             this.btnPheDuyet.Name = "btnPheDuyet";
-            this.btnPheDuyet.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
-            this.btnPheDuyet.Size = new System.Drawing.Size(246, 85);
+            this.btnPheDuyet.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnPheDuyet.Size = new System.Drawing.Size(219, 68);
             this.btnPheDuyet.TabIndex = 8;
             this.btnPheDuyet.Text = "Phê duyệt";
             this.btnPheDuyet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -116,11 +113,10 @@ namespace TTCSDL
             this.btnLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnLogout.IconSize = 40;
             this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(0, 875);
-            this.btnLogout.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnLogout.Location = new System.Drawing.Point(0, 700);
             this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
-            this.btnLogout.Size = new System.Drawing.Size(246, 85);
+            this.btnLogout.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnLogout.Size = new System.Drawing.Size(219, 68);
             this.btnLogout.TabIndex = 7;
             this.btnLogout.Text = "Đăng xuất";
             this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -140,11 +136,10 @@ namespace TTCSDL
             this.btnTke.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTke.IconSize = 40;
             this.btnTke.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTke.Location = new System.Drawing.Point(0, 552);
-            this.btnTke.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnTke.Location = new System.Drawing.Point(0, 442);
             this.btnTke.Name = "btnTke";
-            this.btnTke.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
-            this.btnTke.Size = new System.Drawing.Size(246, 85);
+            this.btnTke.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnTke.Size = new System.Drawing.Size(219, 68);
             this.btnTke.TabIndex = 6;
             this.btnTke.Text = "Thống kê";
             this.btnTke.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -164,11 +159,10 @@ namespace TTCSDL
             this.btnNSu.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnNSu.IconSize = 40;
             this.btnNSu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNSu.Location = new System.Drawing.Point(0, 467);
-            this.btnNSu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnNSu.Location = new System.Drawing.Point(0, 374);
             this.btnNSu.Name = "btnNSu";
-            this.btnNSu.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
-            this.btnNSu.Size = new System.Drawing.Size(246, 85);
+            this.btnNSu.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnNSu.Size = new System.Drawing.Size(219, 68);
             this.btnNSu.TabIndex = 5;
             this.btnNSu.Text = "Nhân sự";
             this.btnNSu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -188,11 +182,10 @@ namespace TTCSDL
             this.btnDeTai.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDeTai.IconSize = 40;
             this.btnDeTai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeTai.Location = new System.Drawing.Point(0, 382);
-            this.btnDeTai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDeTai.Location = new System.Drawing.Point(0, 306);
             this.btnDeTai.Name = "btnDeTai";
-            this.btnDeTai.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
-            this.btnDeTai.Size = new System.Drawing.Size(246, 85);
+            this.btnDeTai.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnDeTai.Size = new System.Drawing.Size(219, 68);
             this.btnDeTai.TabIndex = 4;
             this.btnDeTai.Text = "Đề tài   ";
             this.btnDeTai.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -212,11 +205,10 @@ namespace TTCSDL
             this.btnThongTin.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnThongTin.IconSize = 40;
             this.btnThongTin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongTin.Location = new System.Drawing.Point(0, 297);
-            this.btnThongTin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnThongTin.Location = new System.Drawing.Point(0, 238);
             this.btnThongTin.Name = "btnThongTin";
-            this.btnThongTin.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
-            this.btnThongTin.Size = new System.Drawing.Size(246, 85);
+            this.btnThongTin.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnThongTin.Size = new System.Drawing.Size(219, 68);
             this.btnThongTin.TabIndex = 3;
             this.btnThongTin.Text = "Thông tin";
             this.btnThongTin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -237,11 +229,10 @@ namespace TTCSDL
             this.btnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnHome.IconSize = 40;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 212);
-            this.btnHome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnHome.Location = new System.Drawing.Point(0, 170);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
-            this.btnHome.Size = new System.Drawing.Size(246, 85);
+            this.btnHome.Padding = new System.Windows.Forms.Padding(15, 0, 0, 0);
+            this.btnHome.Size = new System.Drawing.Size(219, 68);
             this.btnHome.TabIndex = 2;
             this.btnHome.Text = "Trang chủ";
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -254,9 +245,8 @@ namespace TTCSDL
             this.panel2.Controls.Add(this.pictureBox3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(246, 212);
+            this.panel2.Size = new System.Drawing.Size(219, 170);
             this.panel2.TabIndex = 1;
             // 
             // pictureBox3
@@ -267,7 +257,7 @@ namespace TTCSDL
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(246, 212);
+            this.pictureBox3.Size = new System.Drawing.Size(219, 170);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -278,10 +268,9 @@ namespace TTCSDL
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Teal;
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1462, 0);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1299, 0);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(71, 55);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(63, 44);
             this.guna2ControlBox1.TabIndex = 0;
             // 
             // lblLoad
@@ -289,9 +278,9 @@ namespace TTCSDL
             this.lblLoad.AutoSize = true;
             this.lblLoad.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLoad.ForeColor = System.Drawing.Color.White;
-            this.lblLoad.Location = new System.Drawing.Point(33, 11);
+            this.lblLoad.Location = new System.Drawing.Point(29, 9);
             this.lblLoad.Name = "lblLoad";
-            this.lblLoad.Size = new System.Drawing.Size(122, 32);
+            this.lblLoad.Size = new System.Drawing.Size(101, 28);
             this.lblLoad.TabIndex = 1;
             this.lblLoad.Text = "Trang chủ";
             // 
@@ -300,9 +289,8 @@ namespace TTCSDL
             this.panel4.BackColor = System.Drawing.Color.White;
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(6, 55);
+            this.panel4.Size = new System.Drawing.Size(5, 44);
             this.panel4.TabIndex = 2;
             // 
             // panel3
@@ -312,40 +300,38 @@ namespace TTCSDL
             this.panel3.Controls.Add(this.lblLoad);
             this.panel3.Controls.Add(this.guna2ControlBox1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(246, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.panel3.Location = new System.Drawing.Point(219, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1533, 55);
+            this.panel3.Size = new System.Drawing.Size(1362, 44);
             this.panel3.TabIndex = 1;
-            
             // 
             // pnlLoad
             // 
             this.pnlLoad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlLoad.Location = new System.Drawing.Point(246, 55);
-            this.pnlLoad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.pnlLoad.Location = new System.Drawing.Point(219, 44);
             this.pnlLoad.Name = "pnlLoad";
-            this.pnlLoad.Size = new System.Drawing.Size(1533, 905);
+            this.pnlLoad.Size = new System.Drawing.Size(1362, 724);
             this.pnlLoad.TabIndex = 2;
             this.pnlLoad.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLoad_Paint);
             // 
             // Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
+            this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1779, 960);
+            this.ClientSize = new System.Drawing.Size(1581, 768);
             this.Controls.Add(this.pnlLoad);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(0, 190);
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.MaximumSize = new System.Drawing.Size(1581, 768);
+            this.MinimumSize = new System.Drawing.Size(1581, 768);
             this.Name = "Main";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Main";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

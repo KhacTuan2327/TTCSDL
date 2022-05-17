@@ -98,7 +98,7 @@ namespace TTCSDL
             btnDeTai.BackColor = Color.CadetBlue;
             //
             DataTable dt = new DataTable();
-            showLoad(new DeTai(dt.Rows[0][0].ToString(), dt.Rows[0][1].ToString(), dt.Rows[0][2].ToString(), dt.Rows[0][3].ToString(), dt.Rows[0][4].ToString(), dt.Rows[0][5].ToString(), dt.Rows[0][6].ToString()  ), "Đề tài");
+            showLoad(new DeTai(), "Đề tài");
         }
 
         private void btnNSu_Click(object sender, EventArgs e)
@@ -127,6 +127,7 @@ namespace TTCSDL
             //
             showLoad(new PheDuyet(), "Phê duyệt");
         }
+
 
         private void btnHome_Leave(object sender, EventArgs e)
         {
@@ -168,6 +169,10 @@ namespace TTCSDL
 
         }
 
-       
+        private void Main_Load(object sender, EventArgs e)
+        {
+            string quyen;
+            Modify modify = new Modify();
+        }
     }
 }

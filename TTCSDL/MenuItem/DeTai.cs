@@ -169,7 +169,7 @@ namespace TTCSDL
                 txtmadt.Text = dataDeTai.SelectedRows[0].Cells[0].Value.ToString();
                 txttendt.Text = dataDeTai.SelectedRows[0].Cells[1].Value.ToString();
                 txtkinhphi.Text = dataDeTai.SelectedRows[0].Cells[2].Value.ToString();
-                txtcn.Text = dataDeTai.SelectedRows[0].Cells[10].Value.ToString();
+                txtcn.Text = dataDeTai.SelectedRows[0].Cells[3].Value.ToString();
                 txtnam.Text = dataDeTai.SelectedRows[0].Cells[4].Value.ToString();
                 txttiendo.Text = dataDeTai.SelectedRows[0].Cells[5].Value.ToString();
                 txtnganh.Text = dataDeTai.SelectedRows[0].Cells[8].Value.ToString();

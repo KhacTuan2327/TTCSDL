@@ -10,13 +10,13 @@ namespace TTCSDL
 {
     internal class Connection
     {
-        private static string stringConnection = @"Data Source=NGAN\SQLEXPRESS01;Initial Catalog=QL_DETAI1;Integrated Security=True";
+        private static string stringConnection = @"Data Source=DESKTOP-CM6N3SA\SQLEXPRESS;Initial Catalog=QL_DETAI;Integrated Security=True";
         public static SqlConnection getConnection()
         {
             return new SqlConnection(stringConnection);
         }
 
-        private SqlConnection connection = new SqlConnection(@"Data Source=NGAN\SQLEXPRESS01;Initial Catalog=QL_DETAI1;Integrated Security=True");
+        private SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-CM6N3SA\SQLEXPRESS;Initial Catalog=QL_DETAI;Integrated Security=True");
 
         public SqlConnection GetCon()
         {
