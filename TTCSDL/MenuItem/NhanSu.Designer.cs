@@ -99,8 +99,9 @@ namespace TTCSDL
             this.panel1.Controls.Add(this.panel3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(564, 718);
+            this.panel1.Size = new System.Drawing.Size(634, 898);
             this.panel1.TabIndex = 0;
             // 
             // btnSave
@@ -111,9 +112,10 @@ namespace TTCSDL
             this.btnSave.IconColor = System.Drawing.Color.Black;
             this.btnSave.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnSave.IconSize = 30;
-            this.btnSave.Location = new System.Drawing.Point(384, 582);
+            this.btnSave.Location = new System.Drawing.Point(432, 728);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(94, 58);
+            this.btnSave.Size = new System.Drawing.Size(106, 72);
             this.btnSave.TabIndex = 73;
             this.btnSave.Text = "Lưu";
             this.btnSave.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -128,9 +130,10 @@ namespace TTCSDL
             this.btnDelete.IconColor = System.Drawing.Color.Black;
             this.btnDelete.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDelete.IconSize = 30;
-            this.btnDelete.Location = new System.Drawing.Point(232, 582);
+            this.btnDelete.Location = new System.Drawing.Point(259, 728);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(94, 58);
+            this.btnDelete.Size = new System.Drawing.Size(108, 72);
             this.btnDelete.TabIndex = 72;
             this.btnDelete.Text = "Xóa";
             this.btnDelete.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -145,11 +148,12 @@ namespace TTCSDL
             this.btnAdd.IconColor = System.Drawing.Color.Black;
             this.btnAdd.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAdd.IconSize = 30;
-            this.btnAdd.Location = new System.Drawing.Point(65, 582);
+            this.btnAdd.Location = new System.Drawing.Point(73, 728);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(94, 58);
+            this.btnAdd.Size = new System.Drawing.Size(114, 72);
             this.btnAdd.TabIndex = 71;
-            this.btnAdd.Text = "Thêm mới";
+            this.btnAdd.Text = "Thêm";
             this.btnAdd.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
@@ -157,11 +161,11 @@ namespace TTCSDL
             // txtTGTG
             // 
             this.txtTGTG.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtTGTG.Location = new System.Drawing.Point(201, 367);
+            this.txtTGTG.Location = new System.Drawing.Point(226, 460);
             this.txtTGTG.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTGTG.Multiline = true;
             this.txtTGTG.Name = "txtTGTG";
-            this.txtTGTG.Size = new System.Drawing.Size(345, 32);
+            this.txtTGTG.Size = new System.Drawing.Size(388, 39);
             this.txtTGTG.TabIndex = 70;
             // 
             // label3
@@ -170,20 +174,20 @@ namespace TTCSDL
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label3.Location = new System.Drawing.Point(11, 376);
+            this.label3.Location = new System.Drawing.Point(12, 471);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(163, 23);
+            this.label3.Size = new System.Drawing.Size(199, 30);
             this.label3.TabIndex = 69;
             this.label3.Text = "Thời gian tham gia";
             // 
             // txtchucvu
             // 
             this.txtchucvu.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtchucvu.Location = new System.Drawing.Point(201, 310);
+            this.txtchucvu.Location = new System.Drawing.Point(226, 389);
             this.txtchucvu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtchucvu.Multiline = true;
             this.txtchucvu.Name = "txtchucvu";
-            this.txtchucvu.Size = new System.Drawing.Size(345, 32);
+            this.txtchucvu.Size = new System.Drawing.Size(388, 39);
             this.txtchucvu.TabIndex = 68;
             // 
             // lbdiachi
@@ -192,9 +196,9 @@ namespace TTCSDL
             this.lbdiachi.AutoSize = true;
             this.lbdiachi.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbdiachi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbdiachi.Location = new System.Drawing.Point(10, 319);
+            this.lbdiachi.Location = new System.Drawing.Point(11, 400);
             this.lbdiachi.Name = "lbdiachi";
-            this.lbdiachi.Size = new System.Drawing.Size(74, 23);
+            this.lbdiachi.Size = new System.Drawing.Size(93, 30);
             this.lbdiachi.TabIndex = 67;
             this.lbdiachi.Text = "Chức vụ";
             // 
@@ -203,10 +207,10 @@ namespace TTCSDL
             this.rdoNu.AutoSize = true;
             this.rdoNu.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoNu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.rdoNu.Location = new System.Drawing.Point(461, 143);
-            this.rdoNu.Margin = new System.Windows.Forms.Padding(4);
+            this.rdoNu.Location = new System.Drawing.Point(519, 179);
+            this.rdoNu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rdoNu.Name = "rdoNu";
-            this.rdoNu.Size = new System.Drawing.Size(61, 29);
+            this.rdoNu.Size = new System.Drawing.Size(71, 33);
             this.rdoNu.TabIndex = 66;
             this.rdoNu.TabStop = true;
             this.rdoNu.Text = "Nữ";
@@ -217,10 +221,10 @@ namespace TTCSDL
             this.rdoNam.AutoSize = true;
             this.rdoNam.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rdoNam.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.rdoNam.Location = new System.Drawing.Point(344, 143);
-            this.rdoNam.Margin = new System.Windows.Forms.Padding(4);
+            this.rdoNam.Location = new System.Drawing.Point(387, 179);
+            this.rdoNam.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rdoNam.Name = "rdoNam";
-            this.rdoNam.Size = new System.Drawing.Size(75, 29);
+            this.rdoNam.Size = new System.Drawing.Size(89, 33);
             this.rdoNam.TabIndex = 65;
             this.rdoNam.TabStop = true;
             this.rdoNam.Text = "Nam";
@@ -232,9 +236,9 @@ namespace TTCSDL
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label2.Location = new System.Drawing.Point(211, 143);
+            this.label2.Location = new System.Drawing.Point(237, 180);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 23);
+            this.label2.Size = new System.Drawing.Size(99, 30);
             this.label2.TabIndex = 64;
             this.label2.Text = "Giới tính";
             // 
@@ -245,11 +249,11 @@ namespace TTCSDL
             this.txttencanbo.AllowDrop = true;
             this.txttencanbo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txttencanbo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txttencanbo.Location = new System.Drawing.Point(320, 89);
+            this.txttencanbo.Location = new System.Drawing.Point(360, 112);
             this.txttencanbo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttencanbo.Multiline = true;
             this.txttencanbo.Name = "txttencanbo";
-            this.txttencanbo.Size = new System.Drawing.Size(226, 32);
+            this.txttencanbo.Size = new System.Drawing.Size(254, 39);
             this.txttencanbo.TabIndex = 63;
             // 
             // lbtenkhoa
@@ -258,9 +262,9 @@ namespace TTCSDL
             this.lbtenkhoa.AutoSize = true;
             this.lbtenkhoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbtenkhoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbtenkhoa.Location = new System.Drawing.Point(212, 98);
+            this.lbtenkhoa.Location = new System.Drawing.Point(238, 123);
             this.lbtenkhoa.Name = "lbtenkhoa";
-            this.lbtenkhoa.Size = new System.Drawing.Size(98, 23);
+            this.lbtenkhoa.Size = new System.Drawing.Size(122, 30);
             this.lbtenkhoa.TabIndex = 62;
             this.lbtenkhoa.Text = "Tên Cán Bộ";
             // 
@@ -268,11 +272,11 @@ namespace TTCSDL
             // 
             this.txtmacanbo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtmacanbo.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtmacanbo.Location = new System.Drawing.Point(320, 39);
+            this.txtmacanbo.Location = new System.Drawing.Point(360, 50);
             this.txtmacanbo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmacanbo.Multiline = true;
             this.txtmacanbo.Name = "txtmacanbo";
-            this.txtmacanbo.Size = new System.Drawing.Size(226, 32);
+            this.txtmacanbo.Size = new System.Drawing.Size(254, 39);
             this.txtmacanbo.TabIndex = 61;
             // 
             // label4
@@ -281,9 +285,9 @@ namespace TTCSDL
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label4.Location = new System.Drawing.Point(12, 488);
+            this.label4.Location = new System.Drawing.Point(14, 611);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(102, 23);
+            this.label4.Size = new System.Drawing.Size(127, 30);
             this.label4.TabIndex = 60;
             this.label4.Text = "Mã bộ môn";
             // 
@@ -291,10 +295,10 @@ namespace TTCSDL
             // 
             this.NgaySinh.AllowDrop = true;
             this.NgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.NgaySinh.Location = new System.Drawing.Point(320, 192);
-            this.NgaySinh.Margin = new System.Windows.Forms.Padding(4);
+            this.NgaySinh.Location = new System.Drawing.Point(360, 240);
+            this.NgaySinh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.NgaySinh.Name = "NgaySinh";
-            this.NgaySinh.Size = new System.Drawing.Size(226, 22);
+            this.NgaySinh.Size = new System.Drawing.Size(254, 26);
             this.NgaySinh.TabIndex = 59;
             // 
             // label1
@@ -303,40 +307,40 @@ namespace TTCSDL
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.label1.Location = new System.Drawing.Point(211, 192);
+            this.label1.Location = new System.Drawing.Point(237, 241);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 23);
+            this.label1.Size = new System.Drawing.Size(112, 30);
             this.label1.TabIndex = 58;
             this.label1.Text = "Ngày sinh";
             // 
             // txtmabm
             // 
             this.txtmabm.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtmabm.Location = new System.Drawing.Point(201, 479);
+            this.txtmabm.Location = new System.Drawing.Point(226, 600);
             this.txtmabm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmabm.Multiline = true;
             this.txtmabm.Name = "txtmabm";
-            this.txtmabm.Size = new System.Drawing.Size(345, 32);
+            this.txtmabm.Size = new System.Drawing.Size(388, 39);
             this.txtmabm.TabIndex = 56;
             // 
             // txtPhone
             // 
             this.txtPhone.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtPhone.Location = new System.Drawing.Point(201, 422);
+            this.txtPhone.Location = new System.Drawing.Point(226, 529);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhone.Multiline = true;
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(345, 32);
+            this.txtPhone.Size = new System.Drawing.Size(388, 39);
             this.txtPhone.TabIndex = 57;
             // 
             // txtcapbac
             // 
             this.txtcapbac.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtcapbac.Location = new System.Drawing.Point(320, 235);
+            this.txtcapbac.Location = new System.Drawing.Point(360, 295);
             this.txtcapbac.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcapbac.Multiline = true;
             this.txtcapbac.Name = "txtcapbac";
-            this.txtcapbac.Size = new System.Drawing.Size(226, 32);
+            this.txtcapbac.Size = new System.Drawing.Size(254, 39);
             this.txtcapbac.TabIndex = 55;
             // 
             // lbsdt
@@ -345,9 +349,9 @@ namespace TTCSDL
             this.lbsdt.AutoSize = true;
             this.lbsdt.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbsdt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbsdt.Location = new System.Drawing.Point(12, 431);
+            this.lbsdt.Location = new System.Drawing.Point(14, 540);
             this.lbsdt.Name = "lbsdt";
-            this.lbsdt.Size = new System.Drawing.Size(121, 23);
+            this.lbsdt.Size = new System.Drawing.Size(150, 30);
             this.lbsdt.TabIndex = 54;
             this.lbsdt.Text = "Số Điện Thoại";
             // 
@@ -357,9 +361,9 @@ namespace TTCSDL
             this.lbchunhiem.AutoSize = true;
             this.lbchunhiem.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbchunhiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbchunhiem.Location = new System.Drawing.Point(210, 242);
+            this.lbchunhiem.Location = new System.Drawing.Point(236, 303);
             this.lbchunhiem.Name = "lbchunhiem";
-            this.lbchunhiem.Size = new System.Drawing.Size(74, 23);
+            this.lbchunhiem.Size = new System.Drawing.Size(90, 30);
             this.lbchunhiem.TabIndex = 53;
             this.lbchunhiem.Text = "Cấp bậc";
             // 
@@ -369,9 +373,9 @@ namespace TTCSDL
             this.lbmakhoa.AutoSize = true;
             this.lbmakhoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbmakhoa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(71)))), ((int)(((byte)(160)))));
-            this.lbmakhoa.Location = new System.Drawing.Point(212, 49);
+            this.lbmakhoa.Location = new System.Drawing.Point(238, 62);
             this.lbmakhoa.Name = "lbmakhoa";
-            this.lbmakhoa.Size = new System.Drawing.Size(96, 23);
+            this.lbmakhoa.Size = new System.Drawing.Size(119, 30);
             this.lbmakhoa.TabIndex = 52;
             this.lbmakhoa.Text = "Mã Cán Bộ";
             // 
@@ -380,9 +384,10 @@ namespace TTCSDL
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.addPic);
             this.panel3.Controls.Add(this.pictureBox1);
-            this.panel3.Location = new System.Drawing.Point(15, 11);
+            this.panel3.Location = new System.Drawing.Point(17, 14);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(178, 238);
+            this.panel3.Size = new System.Drawing.Size(200, 297);
             this.panel3.TabIndex = 0;
             // 
             // addPic
@@ -391,9 +396,10 @@ namespace TTCSDL
             this.addPic.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.addPic.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addPic.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addPic.Location = new System.Drawing.Point(0, 196);
+            this.addPic.Location = new System.Drawing.Point(0, 245);
+            this.addPic.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.addPic.Name = "addPic";
-            this.addPic.Size = new System.Drawing.Size(176, 40);
+            this.addPic.Size = new System.Drawing.Size(198, 50);
             this.addPic.TabIndex = 1;
             this.addPic.Text = "Thêm ảnh";
             this.addPic.UseVisualStyleBackColor = false;
@@ -404,8 +410,9 @@ namespace TTCSDL
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(176, 236);
+            this.pictureBox1.Size = new System.Drawing.Size(198, 295);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
@@ -438,14 +445,14 @@ namespace TTCSDL
             this.datanhansu.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.datanhansu.EnableHeadersVisualStyles = false;
             this.datanhansu.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.datanhansu.Location = new System.Drawing.Point(564, 61);
+            this.datanhansu.Location = new System.Drawing.Point(634, 77);
             this.datanhansu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.datanhansu.Name = "datanhansu";
             this.datanhansu.RowHeadersVisible = false;
             this.datanhansu.RowHeadersWidth = 62;
             this.datanhansu.RowTemplate.Height = 28;
             this.datanhansu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datanhansu.Size = new System.Drawing.Size(798, 657);
+            this.datanhansu.Size = new System.Drawing.Size(898, 821);
             this.datanhansu.StandardTab = true;
             this.datanhansu.TabIndex = 45;
             this.datanhansu.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
@@ -478,9 +485,10 @@ namespace TTCSDL
             this.panel2.Controls.Add(this.iconButton2);
             this.panel2.Controls.Add(this.txttimkiem);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(564, 0);
+            this.panel2.Location = new System.Drawing.Point(634, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(798, 61);
+            this.panel2.Size = new System.Drawing.Size(898, 77);
             this.panel2.TabIndex = 18;
             // 
             // btnExportFile
@@ -490,9 +498,10 @@ namespace TTCSDL
             this.btnExportFile.IconColor = System.Drawing.Color.Black;
             this.btnExportFile.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnExportFile.IconSize = 30;
-            this.btnExportFile.Location = new System.Drawing.Point(533, 4);
+            this.btnExportFile.Location = new System.Drawing.Point(600, 5);
+            this.btnExportFile.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnExportFile.Name = "btnExportFile";
-            this.btnExportFile.Size = new System.Drawing.Size(87, 54);
+            this.btnExportFile.Size = new System.Drawing.Size(160, 68);
             this.btnExportFile.TabIndex = 48;
             this.btnExportFile.Text = "Xuất file";
             this.btnExportFile.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -508,9 +517,10 @@ namespace TTCSDL
             this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconButton2.IconSize = 30;
             this.iconButton2.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.iconButton2.Location = new System.Drawing.Point(85, 12);
+            this.iconButton2.Location = new System.Drawing.Point(96, 15);
+            this.iconButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(51, 32);
+            this.iconButton2.Size = new System.Drawing.Size(57, 40);
             this.iconButton2.TabIndex = 47;
             this.iconButton2.UseVisualStyleBackColor = true;
             // 
@@ -518,24 +528,24 @@ namespace TTCSDL
             // 
             this.txttimkiem.BackColor = System.Drawing.SystemColors.Window;
             this.txttimkiem.Font = new System.Drawing.Font("Times New Roman", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttimkiem.Location = new System.Drawing.Point(85, 11);
+            this.txttimkiem.Location = new System.Drawing.Point(96, 14);
             this.txttimkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttimkiem.Multiline = true;
             this.txttimkiem.Name = "txttimkiem";
             this.txttimkiem.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txttimkiem.Size = new System.Drawing.Size(296, 37);
+            this.txttimkiem.Size = new System.Drawing.Size(332, 45);
             this.txttimkiem.TabIndex = 46;
             // 
             // NhanSu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1362, 718);
+            this.ClientSize = new System.Drawing.Size(1532, 898);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.datanhansu);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "NhanSu";
             this.Text = "NhanSu";
             this.Load += new System.EventHandler(this.NhanSu_Load);

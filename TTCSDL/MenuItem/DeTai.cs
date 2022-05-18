@@ -7,13 +7,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Office.Interop.Excel;
+using app = Microsoft.Office.Interop.Excel.Application;
 
 namespace TTCSDL
 {
     public partial class DeTai : Form
     {
         string taikhoan = "", matkhau = "", hoten = "", email = "", makhoa = "", mabm = "", quyen = "";
-        DataTable datatable;
+        //DataTable datatable;
         public DeTai()
         {
             InitializeComponent();
@@ -88,6 +90,31 @@ namespace TTCSDL
             dt = new detai(madt, tendt, kinhphi, time, nam, tiendo, tt, tieuban, nganh, capql , cn);
         }
 
+        private void export2Excel(DataGridView g, string tenTap)
+        {
+            app obj = new app();
+            obj.Application.Workbooks.Add(Type.Missing);
+            obj.Columns.ColumnWidth = 25;
+            for (int i = 1; i < g.Columns.Count + 1; i++) { obj.Cells[1, i] = g.Columns[i - 1].HeaderText; }
+            for (int i = 0; i < g.Rows.Count; i++)
+            {
+                for (int j = 0; j < g.Columns.Count; j++)
+                {
+                    if (g.Rows[i].Cells[j].Value != null) { obj.Cells[i + 2, j + 1] = g.Rows[i].Cells[j].Value.ToString(); }
+                }
+            }
+            obj.ActiveWorkbook.SaveCopyAs(tenTap + ".xlsx");
+            obj.ActiveWorkbook.Saved = true;
+        }
+
+        private void btnExportFile_Click(object sender, EventArgs e)
+        {
+            if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                //gọi hàm ToExcel() với tham số là dtgDSHS và filename từ SaveFileDialog
+                export2Excel(dataDeTai, saveFileDialog1.FileName);
+            }
+        }
 
         private void lbtenkhoa_Click(object sender, EventArgs e)
         {

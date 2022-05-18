@@ -1,7 +1,7 @@
 ﻿
 namespace TTCSDL
 {
-    partial class PheDuyet
+    partial class HoiDong
     {
         /// <summary>
         /// Required designer variable.
@@ -31,14 +31,14 @@ namespace TTCSDL
         {
             this.SuspendLayout();
             // 
-            // PheDuyet
+            // HoiDong
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1532, 898);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.Name = "PheDuyet";
-            this.Text = "PheDuyet";
+            this.Name = "HoiDong";
+            this.Text = "HoiDong";
             this.ResumeLayout(false);
 
         }

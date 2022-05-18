@@ -92,20 +92,20 @@ namespace TTCSDL
             this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images4"))));
             this.imageSlider1.Images.Add(((System.Drawing.Image)(resources.GetObject("imageSlider1.Images5"))));
             this.imageSlider1.Location = new System.Drawing.Point(0, 0);
-            this.imageSlider1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.imageSlider1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.imageSlider1.Name = "imageSlider1";
-            this.imageSlider1.Size = new System.Drawing.Size(1362, 718);
+            this.imageSlider1.Size = new System.Drawing.Size(1532, 898);
             this.imageSlider1.TabIndex = 0;
             this.imageSlider1.Text = "imageSlider1";
             // 
             // HomeForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1362, 718);
+            this.ClientSize = new System.Drawing.Size(1532, 898);
             this.Controls.Add(this.imageSlider1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "HomeForm";
             this.Text = "HomeForm";
             ((System.ComponentModel.ISupportInitialize)(this.imageSlider1)).EndInit();

@@ -149,11 +149,6 @@ namespace TTCSDL
             btnNSu.BackColor = Color.Teal;
         }
 
-        private void btnTke_Leave(object sender, EventArgs e)
-        {
-            btnTke.BackColor = Color.Teal;
-        }
-
         private void btnPheDuyet_Leave(object sender, EventArgs e)
         {
             btnPheDuyet.BackColor = Color.Teal;
@@ -173,6 +168,34 @@ namespace TTCSDL
         {
             string quyen;
             Modify modify = new Modify();
+        }
+
+        private void btnTke_Click_1(object sender, EventArgs e)
+        {
+            pnlNav.Height = btnTke.Height;
+            pnlNav.Top = btnTke.Top;
+            btnTke.BackColor = Color.CadetBlue;
+            //
+            showLoad(new ThongKe(), "Thống kê");
+        }
+
+        private void btnPheDuyet_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHoiDong_Click(object sender, EventArgs e)
+        {
+            pnlNav.Height = btnTke.Height;
+            pnlNav.Top = btnTke.Top;
+            btnTke.BackColor = Color.CadetBlue;
+            //
+            showLoad(new HoiDong(), "Hội Đồng");
+        }
+
+        private void btnTke_Leave_1(object sender, EventArgs e)
+        {
+            btnTke.BackColor = Color.Teal;
         }
     }
 }
