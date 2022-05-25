@@ -14,7 +14,6 @@ namespace TTCSDL
         private string gt;
         private string cb;
         private string cv;
-        private string tgtg;
         private string sdt;
         private string mabm;
 
@@ -22,7 +21,7 @@ namespace TTCSDL
         {
         }
 
-        public nhansu(string id, string name, string ns, string gt, string cb, string cv, string tgtg, string sdt, string mabm)
+        public nhansu(string id, string name, string ns, string gt, string cb, string cv, string sdt, string mabm)
         {
             this.id = id;
             this.name = name;
@@ -30,7 +29,6 @@ namespace TTCSDL
             this.gt = gt;
             this.cb = cb;
             this.cv = cv;
-            this.tgtg = tgtg;
             this.sdt = sdt;
             this.mabm = mabm;
         }
@@ -39,7 +37,6 @@ namespace TTCSDL
         public string Ns { get => ns; set => ns = value; }
         public string Cb { get => cb; set => cb = value; }
         public string Cv { get => cv; set => cv = value; }
-        public string Tgtg { get => tgtg; set => tgtg = value; }
         public string Gt { get => gt; set => gt = value; }
         public string Sdt { get => sdt; set => sdt = value; }
         public string Mabm { get => mabm; set => mabm = value; }

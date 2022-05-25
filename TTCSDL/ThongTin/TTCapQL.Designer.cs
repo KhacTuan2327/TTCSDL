@@ -57,12 +57,14 @@ namespace TTCSDL
             this.txtMoTa.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMoTa.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMoTa.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMoTa.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMoTa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMoTa.ForeColor = System.Drawing.Color.Black;
             this.txtMoTa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMoTa.Location = new System.Drawing.Point(1082, 254);
+            this.txtMoTa.Location = new System.Drawing.Point(1082, 234);
             this.txtMoTa.Name = "txtMoTa";
             this.txtMoTa.PasswordChar = '\0';
             this.txtMoTa.PlaceholderText = "";
+            this.txtMoTa.ReadOnly = true;
             this.txtMoTa.SelectedText = "";
             this.txtMoTa.Size = new System.Drawing.Size(420, 38);
             this.txtMoTa.TabIndex = 84;
@@ -76,12 +78,14 @@ namespace TTCSDL
             this.txtTenCap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTenCap.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtTenCap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenCap.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtTenCap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenCap.ForeColor = System.Drawing.Color.Black;
             this.txtTenCap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenCap.Location = new System.Drawing.Point(1082, 174);
+            this.txtTenCap.Location = new System.Drawing.Point(1082, 168);
             this.txtTenCap.Name = "txtTenCap";
             this.txtTenCap.PasswordChar = '\0';
             this.txtTenCap.PlaceholderText = "";
+            this.txtTenCap.ReadOnly = true;
             this.txtTenCap.SelectedText = "";
             this.txtTenCap.Size = new System.Drawing.Size(420, 38);
             this.txtTenCap.TabIndex = 83;
@@ -95,12 +99,14 @@ namespace TTCSDL
             this.txtMaCap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMaCap.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txtMaCap.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaCap.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtMaCap.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMaCap.ForeColor = System.Drawing.Color.Black;
             this.txtMaCap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaCap.Location = new System.Drawing.Point(1082, 108);
             this.txtMaCap.Name = "txtMaCap";
             this.txtMaCap.PasswordChar = '\0';
             this.txtMaCap.PlaceholderText = "";
+            this.txtMaCap.ReadOnly = true;
             this.txtMaCap.SelectedText = "";
             this.txtMaCap.Size = new System.Drawing.Size(420, 38);
             this.txtMaCap.TabIndex = 82;
@@ -111,7 +117,7 @@ namespace TTCSDL
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(846, 315);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 38);
+            this.label2.Size = new System.Drawing.Size(0, 32);
             this.label2.TabIndex = 80;
             // 
             // label1
@@ -120,7 +126,7 @@ namespace TTCSDL
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(846, 240);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 38);
+            this.label1.Size = new System.Drawing.Size(84, 32);
             this.label1.TabIndex = 79;
             this.label1.Text = "Mô Tả";
             // 
@@ -130,7 +136,7 @@ namespace TTCSDL
             this.lbTen.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTen.Location = new System.Drawing.Point(846, 174);
             this.lbTen.Name = "lbTen";
-            this.lbTen.Size = new System.Drawing.Size(117, 38);
+            this.lbTen.Size = new System.Drawing.Size(102, 32);
             this.lbTen.TabIndex = 78;
             this.lbTen.Text = "Tên Cấp";
             // 
@@ -140,23 +146,23 @@ namespace TTCSDL
             this.lbMa.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbMa.Location = new System.Drawing.Point(846, 108);
             this.lbMa.Name = "lbMa";
-            this.lbMa.Size = new System.Drawing.Size(115, 38);
+            this.lbMa.Size = new System.Drawing.Size(99, 32);
             this.lbMa.TabIndex = 77;
             this.lbMa.Text = "Mã Cấp";
             // 
             // lbTB
             // 
-            this.lbTB.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTB.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTB.Location = new System.Drawing.Point(340, 15);
             this.lbTB.Name = "lbTB";
-            this.lbTB.Size = new System.Drawing.Size(195, 45);
+            this.lbTB.Size = new System.Drawing.Size(268, 45);
             this.lbTB.TabIndex = 76;
             this.lbTB.Text = "Cấp Quản Lý";
             // 
             // lbThongTinDT
             // 
-            this.lbThongTinDT.Font = new System.Drawing.Font("Times New Roman", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbThongTinDT.Location = new System.Drawing.Point(1098, 15);
+            this.lbThongTinDT.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbThongTinDT.Location = new System.Drawing.Point(1115, 15);
             this.lbThongTinDT.Name = "lbThongTinDT";
             this.lbThongTinDT.Size = new System.Drawing.Size(195, 45);
             this.lbThongTinDT.TabIndex = 75;
@@ -192,11 +198,12 @@ namespace TTCSDL
             this.dataCQL.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dataCQL.Location = new System.Drawing.Point(16, 108);
             this.dataCQL.Name = "dataCQL";
+            this.dataCQL.ReadOnly = true;
             this.dataCQL.RowHeadersVisible = false;
             this.dataCQL.RowHeadersWidth = 62;
             this.dataCQL.RowTemplate.Height = 28;
             this.dataCQL.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataCQL.Size = new System.Drawing.Size(789, 795);
+            this.dataCQL.Size = new System.Drawing.Size(789, 776);
             this.dataCQL.TabIndex = 85;
             this.dataCQL.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
             this.dataCQL.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
@@ -212,7 +219,7 @@ namespace TTCSDL
             this.dataCQL.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dataCQL.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.dataCQL.ThemeStyle.HeaderStyle.Height = 32;
-            this.dataCQL.ThemeStyle.ReadOnly = false;
+            this.dataCQL.ThemeStyle.ReadOnly = true;
             this.dataCQL.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dataCQL.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataCQL.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -220,11 +227,13 @@ namespace TTCSDL
             this.dataCQL.ThemeStyle.RowsStyle.Height = 28;
             this.dataCQL.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataCQL.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataCQL.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataCQL_CellClick);
             this.dataCQL.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataCQL_CellContentClick);
             // 
             // TTCapQL
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1522, 891);
             this.Controls.Add(this.dataCQL);
             this.Controls.Add(this.txtMoTa);

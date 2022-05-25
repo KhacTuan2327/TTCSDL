@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NewPassForm));
             this.newPass = new Guna.UI2.WinForms.Guna2TextBox();
             this.checkShow = new System.Windows.Forms.CheckBox();
@@ -40,6 +41,7 @@
             this.message = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.SuspendLayout();
             // 
             // newPass
@@ -59,11 +61,12 @@
             this.newPass.Location = new System.Drawing.Point(89, 229);
             this.newPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.newPass.Name = "newPass";
-            this.newPass.PasswordChar = '*';
+            this.newPass.PasswordChar = '\0';
             this.newPass.PlaceholderText = "Mật khẩu mới";
             this.newPass.SelectedText = "";
             this.newPass.Size = new System.Drawing.Size(399, 48);
             this.newPass.TabIndex = 3;
+            this.newPass.TextChanged += new System.EventHandler(this.newPass_TextChanged);
             // 
             // checkShow
             // 
@@ -73,7 +76,7 @@
             this.checkShow.Location = new System.Drawing.Point(89, 404);
             this.checkShow.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.checkShow.Name = "checkShow";
-            this.checkShow.Size = new System.Drawing.Size(175, 26);
+            this.checkShow.Size = new System.Drawing.Size(144, 22);
             this.checkShow.TabIndex = 4;
             this.checkShow.Text = "Hiển thị mật khẩu";
             this.checkShow.UseVisualStyleBackColor = true;
@@ -85,7 +88,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(86, 189);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 22);
+            this.label1.Size = new System.Drawing.Size(110, 18);
             this.label1.TabIndex = 5;
             this.label1.Text = "Mật khẩu mới";
             // 
@@ -95,7 +98,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(86, 291);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(171, 22);
+            this.label2.Size = new System.Drawing.Size(143, 18);
             this.label2.TabIndex = 7;
             this.label2.Text = "Nhập lại mật khẩu";
             // 
@@ -116,7 +119,7 @@
             this.verifyPass.Location = new System.Drawing.Point(89, 331);
             this.verifyPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.verifyPass.Name = "verifyPass";
-            this.verifyPass.PasswordChar = '*';
+            this.verifyPass.PasswordChar = '\0';
             this.verifyPass.PlaceholderText = "Nhập lại mật khẩu";
             this.verifyPass.SelectedText = "";
             this.verifyPass.Size = new System.Drawing.Size(399, 48);
@@ -170,11 +173,11 @@
             this.message.AutoSize = true;
             this.message.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.message.ForeColor = System.Drawing.Color.Red;
-            this.message.Location = new System.Drawing.Point(159, 491);
+            this.message.Location = new System.Drawing.Point(158, 490);
             this.message.Name = "message";
-            this.message.Size = new System.Drawing.Size(260, 29);
+            this.message.Size = new System.Drawing.Size(271, 25);
             this.message.TabIndex = 21;
-            this.message.Text = "Mật khẩu không đúng";
+            this.message.Text = "Mật khẩu không chính xác!";
             // 
             // linkLabel1
             // 
@@ -183,7 +186,7 @@
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.linkLabel1.Location = new System.Drawing.Point(83, 51);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(71, 29);
+            this.linkLabel1.Size = new System.Drawing.Size(61, 25);
             this.linkLabel1.TabIndex = 22;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Mẹo:";
@@ -201,9 +204,15 @@
             this.textBox1.Text = "Đặt mật khẩu ít nhất 8 kí tự, có kí tự in hoa, in thường, số và các kí tự đặc biệ" +
     "t để tăng tính bảo mật";
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 20;
+            this.guna2Elipse1.TargetControl = this;
+            // 
             // NewPassForm
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(573, 692);
             this.Controls.Add(this.textBox1);
@@ -241,5 +250,6 @@
         private System.Windows.Forms.Label message;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.TextBox textBox1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }

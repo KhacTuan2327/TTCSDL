@@ -19,15 +19,7 @@ namespace TTCSDL
         Modify modify = new Modify();
         private void dataTB_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataTB.Rows.Count > 1)
-            {
-                txtMaTB.Text = dataTB.SelectedRows[0].Cells[1].Value.ToString();
-                txtTenTB.Text = dataTB.SelectedRows[0].Cells[2].Value.ToString();
-                txtLinhVuc.Text = dataTB.SelectedRows[0].Cells[3].Value.ToString();
-                txtSDT.Text = dataTB.SelectedRows[0].Cells[4].Value.ToString();
-                txtTruongTB.Text = dataTB.SelectedRows[0].Cells[5].Value.ToString();
-                txtSDT.Text = dataTB.SelectedRows[0].Cells[6].Value.ToString();
-            }
+            
         }
 
         private void TTTieuBan_Load(object sender, EventArgs e)
@@ -42,6 +34,25 @@ namespace TTCSDL
             {
                 MessageBox.Show("Lỗi: " + ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void dataTB_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if(dataTB.Rows.Count > 1)
+            {
+                txtMaTB.Text = dataTB.SelectedRows[0].Cells[0].Value.ToString();
+                txtTenTB.Text = dataTB.SelectedRows[0].Cells[1].Value.ToString();
+                txtLinhVuc.Text = dataTB.SelectedRows[0].Cells[2].Value.ToString();
+                txtSDT.Text = dataTB.SelectedRows[0].Cells[3].Value.ToString();
+                txtTruongTB.Text = dataTB.SelectedRows[0].Cells[4].Value.ToString();
+                txtDiaChi.Text = dataTB.SelectedRows[0].Cells[5].Value.ToString();
+            }
+        }
+
+        private void btnDsTvTb_Click(object sender, EventArgs e)
+        {
+            ThanhVienTB thanhVienTB = new ThanhVienTB(txtMaTB.Text);
+            thanhVienTB.ShowDialog();
         }
     }
 }

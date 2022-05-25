@@ -33,13 +33,17 @@ namespace TTCSDL
 
         private void dataCQL_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dataCQL.Rows.Count > 1)
-            {
-                txtMaCap.Text = dataCQL.SelectedRows[0].Cells[1].Value.ToString();
-                txtTenCap.Text = dataCQL.SelectedRows[0].Cells[2].Value.ToString();
-                txtMoTa.Text = dataCQL.SelectedRows[0].Cells[3].Value.ToString();
-            }
+            
         }
 
+        private void dataCQL_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataCQL.Rows.Count > 1)
+            {
+                txtMaCap.Text = dataCQL.SelectedRows[0].Cells[0].Value.ToString();
+                txtTenCap.Text = dataCQL.SelectedRows[0].Cells[1].Value.ToString();
+                txtMoTa.Text = dataCQL.SelectedRows[0].Cells[2].Value.ToString();
+            }
+        }
     }
 }

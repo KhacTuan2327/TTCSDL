@@ -28,18 +28,19 @@ namespace TTCSDL
         {
             if (checkShow.Checked)
             {
-                newPass.PasswordChar = (char)0;
-                verifyPass.PasswordChar = (char)0;
+                newPass.UseSystemPasswordChar = false;
+                verifyPass.UseSystemPasswordChar = false;
             }
             else
             {
-                newPass.PasswordChar = '*';
-                verifyPass.PasswordChar = '*';
+                newPass.UseSystemPasswordChar = true;
+                verifyPass.UseSystemPasswordChar = true;
             }
         }
         //Hiển thị thông báo khi nhập xác minh mật khẩu
         private void verifyPass_TextChanged(object sender, EventArgs e)
         {
+            verifyPass.UseSystemPasswordChar = true;
             if (newPass.Text == verifyPass.Text)
             {
                 message.Visible = true;
@@ -49,6 +50,8 @@ namespace TTCSDL
             else if (newPass.Text != verifyPass.Text)
             {
                 message.Visible = true;
+                message.Text = "Mật khẩu không chính xác!";
+                message.ForeColor = Color.Red;
             }
         }
         Modify modify = new Modify();
@@ -84,6 +87,11 @@ namespace TTCSDL
             {
                 return ;
             }
+        }
+
+        private void newPass_TextChanged(object sender, EventArgs e)
+        {
+            newPass.UseSystemPasswordChar = true;
         }
     }
 }

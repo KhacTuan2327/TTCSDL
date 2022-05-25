@@ -29,6 +29,7 @@ namespace TTCSDL
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForgotPass));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.verifyCode = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -41,6 +42,7 @@ namespace TTCSDL
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -205,6 +207,7 @@ namespace TTCSDL
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(410, 51);
             this.textBox1.TabIndex = 44;
             this.textBox1.Text = "Nhập địa chỉ email của bạn để nhận mã xác thực tại hộp thư và thực hiện các thao " +
@@ -217,14 +220,20 @@ namespace TTCSDL
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.linkLabel1.Location = new System.Drawing.Point(107, 104);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(114, 29);
+            this.linkLabel1.Size = new System.Drawing.Size(98, 25);
             this.linkLabel1.TabIndex = 43;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Yêu cầu:";
             // 
+            // guna2Elipse1
+            // 
+            this.guna2Elipse1.BorderRadius = 20;
+            this.guna2Elipse1.TargetControl = this;
+            // 
             // ForgotPass
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(573, 692);
             this.Controls.Add(this.textBox1);
@@ -264,5 +273,6 @@ namespace TTCSDL
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
     }
 }
