@@ -25,18 +25,13 @@ namespace TTCSDL
             this.makhoa = makhoa;
         }
 
-        private void dataDT_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
         private void TTBoMon_Load(object sender, EventArgs e)
         {
             modify = new Modify();
 
             try
             {
-                dataDT.DataSource = modify.Table("SELECT MABM as 'Mã bộ môn', TENBM as 'Tên bộ môn', DIACHI as 'Địa chỉ',  SDT as 'Số điện thoại', CHUNHIEMBM as 'Chủ nhiệm bộ môn' FROM BOMON where MAKHOA = N'" + makhoa+"'");
+                dataDT.DataSource = modify.Table("SELECT MABM as 'Mã bộ môn', TENBM as 'Tên bộ môn', DIACHI as 'Địa chỉ',  SDT as 'Số điện thoại', CHUNHIEM as 'Chủ nhiệm bộ môn' FROM BOMON where MAKHOA = N'" + makhoa+"'");
             }
             catch (Exception ex)
             {

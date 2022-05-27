@@ -311,7 +311,7 @@ namespace TTCSDL
             // DeTai1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(1527, 883);
             this.Controls.Add(this.btnDsBm);
             this.Controls.Add(this.dataDT);

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TTCSDL
 {
-    public partial class TTTieuBan : Form
+    public partial class btndt : Form
     {
-        public TTTieuBan()
+        public btndt()
         {
             InitializeComponent();
         }
@@ -53,6 +53,12 @@ namespace TTCSDL
         {
             ThanhVienTB thanhVienTB = new ThanhVienTB(txtMaTB.Text);
             thanhVienTB.ShowDialog();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            TTDeTai_TB tTDeTai_TB = new TTDeTai_TB(txtMaTB.Text);
+            tTDeTai_TB.ShowDialog();
         }
     }
 }

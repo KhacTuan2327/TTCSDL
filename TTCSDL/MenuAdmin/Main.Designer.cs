@@ -32,11 +32,15 @@ namespace TTCSDL
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlNav = new System.Windows.Forms.Panel();
             this.btnPDuyet = new FontAwesome.Sharp.IconButton();
             this.btnTKe = new FontAwesome.Sharp.IconButton();
-            this.btnLogout = new FontAwesome.Sharp.IconButton();
             this.btnNSu = new FontAwesome.Sharp.IconButton();
+            this.pnldtuser = new System.Windows.Forms.Panel();
+            this.btndkdt = new FontAwesome.Sharp.IconButton();
+            this.btndtkhoa = new FontAwesome.Sharp.IconButton();
             this.btnDeTai = new FontAwesome.Sharp.IconButton();
+            this.btnLogout = new FontAwesome.Sharp.IconButton();
             this.btnThongTin = new FontAwesome.Sharp.IconButton();
             this.btnHome = new FontAwesome.Sharp.IconButton();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -47,8 +51,9 @@ namespace TTCSDL
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlLoad = new System.Windows.Forms.Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.pnlNav = new Guna.UI2.WinForms.Guna2Panel();
+            this.pnlNav1 = new Guna.UI2.WinForms.Guna2Panel();
             this.panel1.SuspendLayout();
+            this.pnldtuser.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel3.SuspendLayout();
@@ -60,9 +65,10 @@ namespace TTCSDL
             this.panel1.Controls.Add(this.pnlNav);
             this.panel1.Controls.Add(this.btnPDuyet);
             this.panel1.Controls.Add(this.btnTKe);
-            this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.btnNSu);
+            this.panel1.Controls.Add(this.pnldtuser);
             this.panel1.Controls.Add(this.btnDeTai);
+            this.panel1.Controls.Add(this.btnLogout);
             this.panel1.Controls.Add(this.btnThongTin);
             this.panel1.Controls.Add(this.btnHome);
             this.panel1.Controls.Add(this.panel2);
@@ -72,6 +78,14 @@ namespace TTCSDL
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(246, 960);
             this.panel1.TabIndex = 0;
+            // 
+            // pnlNav
+            // 
+            this.pnlNav.BackColor = System.Drawing.Color.White;
+            this.pnlNav.Location = new System.Drawing.Point(0, 187);
+            this.pnlNav.Name = "pnlNav";
+            this.pnlNav.Size = new System.Drawing.Size(6, 85);
+            this.pnlNav.TabIndex = 1;
             // 
             // btnPDuyet
             // 
@@ -85,16 +99,16 @@ namespace TTCSDL
             this.btnPDuyet.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnPDuyet.IconSize = 40;
             this.btnPDuyet.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPDuyet.Location = new System.Drawing.Point(0, 637);
+            this.btnPDuyet.Location = new System.Drawing.Point(0, 734);
             this.btnPDuyet.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnPDuyet.Name = "btnPDuyet";
             this.btnPDuyet.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
             this.btnPDuyet.Size = new System.Drawing.Size(246, 85);
-            this.btnPDuyet.TabIndex = 9;
+            this.btnPDuyet.TabIndex = 11;
             this.btnPDuyet.Text = "Phê duyệt";
             this.btnPDuyet.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPDuyet.UseVisualStyleBackColor = true;
-            this.btnPDuyet.Click += new System.EventHandler(this.btnPDuyet_Click);
+            this.btnPDuyet.Click += new System.EventHandler(this.btnPDuyet_Click_1);
             this.btnPDuyet.Leave += new System.EventHandler(this.btnPDuyet_Leave);
             // 
             // btnTKe
@@ -109,17 +123,125 @@ namespace TTCSDL
             this.btnTKe.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnTKe.IconSize = 40;
             this.btnTKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTKe.Location = new System.Drawing.Point(0, 552);
+            this.btnTKe.Location = new System.Drawing.Point(0, 649);
             this.btnTKe.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnTKe.Name = "btnTKe";
             this.btnTKe.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
             this.btnTKe.Size = new System.Drawing.Size(246, 85);
-            this.btnTKe.TabIndex = 8;
+            this.btnTKe.TabIndex = 10;
             this.btnTKe.Text = "Thống kê";
             this.btnTKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTKe.UseVisualStyleBackColor = true;
-            this.btnTKe.Click += new System.EventHandler(this.btnTKe_Click);
+            this.btnTKe.Click += new System.EventHandler(this.btnTKe_Click_1);
             this.btnTKe.Leave += new System.EventHandler(this.btnTKe_Leave);
+            // 
+            // btnNSu
+            // 
+            this.btnNSu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnNSu.FlatAppearance.BorderSize = 0;
+            this.btnNSu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNSu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNSu.ForeColor = System.Drawing.Color.White;
+            this.btnNSu.IconChar = FontAwesome.Sharp.IconChar.UserGraduate;
+            this.btnNSu.IconColor = System.Drawing.Color.White;
+            this.btnNSu.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnNSu.IconSize = 40;
+            this.btnNSu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNSu.Location = new System.Drawing.Point(0, 564);
+            this.btnNSu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnNSu.Name = "btnNSu";
+            this.btnNSu.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
+            this.btnNSu.Size = new System.Drawing.Size(246, 85);
+            this.btnNSu.TabIndex = 9;
+            this.btnNSu.Text = "Nhân sự";
+            this.btnNSu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNSu.UseVisualStyleBackColor = true;
+            this.btnNSu.Click += new System.EventHandler(this.btnNSu_Click_1);
+            this.btnNSu.Leave += new System.EventHandler(this.btnNSu_Leave);
+            // 
+            // pnldtuser
+            // 
+            this.pnldtuser.BackColor = System.Drawing.Color.Teal;
+            this.pnldtuser.Controls.Add(this.pnlNav1);
+            this.pnldtuser.Controls.Add(this.btndkdt);
+            this.pnldtuser.Controls.Add(this.btndtkhoa);
+            this.pnldtuser.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnldtuser.Location = new System.Drawing.Point(0, 442);
+            this.pnldtuser.Name = "pnldtuser";
+            this.pnldtuser.Size = new System.Drawing.Size(246, 122);
+            this.pnldtuser.TabIndex = 3;
+            // 
+            // btndkdt
+            // 
+            this.btndkdt.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btndkdt.FlatAppearance.BorderSize = 0;
+            this.btndkdt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndkdt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndkdt.ForeColor = System.Drawing.Color.White;
+            this.btndkdt.IconChar = FontAwesome.Sharp.IconChar.BookMedical;
+            this.btndkdt.IconColor = System.Drawing.Color.White;
+            this.btndkdt.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btndkdt.IconSize = 40;
+            this.btndkdt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btndkdt.Location = new System.Drawing.Point(0, 61);
+            this.btndkdt.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btndkdt.Name = "btndkdt";
+            this.btndkdt.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
+            this.btndkdt.Size = new System.Drawing.Size(246, 61);
+            this.btndkdt.TabIndex = 1;
+            this.btndkdt.Text = "Đăng ký đề tài";
+            this.btndkdt.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btndkdt.UseVisualStyleBackColor = true;
+            this.btndkdt.Click += new System.EventHandler(this.btndkdt_Click);
+            this.btndkdt.Leave += new System.EventHandler(this.btndkdt_Leave);
+            // 
+            // btndtkhoa
+            // 
+            this.btndtkhoa.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btndtkhoa.FlatAppearance.BorderSize = 0;
+            this.btndtkhoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btndtkhoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndtkhoa.ForeColor = System.Drawing.Color.White;
+            this.btndtkhoa.IconChar = FontAwesome.Sharp.IconChar.PollH;
+            this.btndtkhoa.IconColor = System.Drawing.Color.White;
+            this.btndtkhoa.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btndtkhoa.IconSize = 40;
+            this.btndtkhoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btndtkhoa.Location = new System.Drawing.Point(0, 0);
+            this.btndtkhoa.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btndtkhoa.Name = "btndtkhoa";
+            this.btndtkhoa.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
+            this.btndtkhoa.Size = new System.Drawing.Size(246, 61);
+            this.btndtkhoa.TabIndex = 0;
+            this.btndtkhoa.Text = "Danh sách đề tài";
+            this.btndtkhoa.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btndtkhoa.UseVisualStyleBackColor = true;
+            this.btndtkhoa.Click += new System.EventHandler(this.btndtkhoa_Click_1);
+            this.btndtkhoa.Leave += new System.EventHandler(this.btndtkhoa_Leave);
+            // 
+            // btnDeTai
+            // 
+            this.btnDeTai.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnDeTai.FlatAppearance.BorderSize = 0;
+            this.btnDeTai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDeTai.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDeTai.ForeColor = System.Drawing.Color.White;
+            this.btnDeTai.IconChar = FontAwesome.Sharp.IconChar.BookReader;
+            this.btnDeTai.IconColor = System.Drawing.Color.White;
+            this.btnDeTai.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnDeTai.IconSize = 40;
+            this.btnDeTai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDeTai.Location = new System.Drawing.Point(0, 357);
+            this.btnDeTai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnDeTai.Name = "btnDeTai";
+            this.btnDeTai.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
+            this.btnDeTai.Size = new System.Drawing.Size(246, 85);
+            this.btnDeTai.TabIndex = 8;
+            this.btnDeTai.Text = "Đề tài   ";
+            this.btnDeTai.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnDeTai.UseVisualStyleBackColor = true;
+            this.btnDeTai.Click += new System.EventHandler(this.btnDeTai_Click_1);
+            this.btnDeTai.Leave += new System.EventHandler(this.btnDeTai_Leave);
             // 
             // btnLogout
             // 
@@ -145,54 +267,6 @@ namespace TTCSDL
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             this.btnLogout.Leave += new System.EventHandler(this.btnLogout_Leave);
             // 
-            // btnNSu
-            // 
-            this.btnNSu.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnNSu.FlatAppearance.BorderSize = 0;
-            this.btnNSu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNSu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNSu.ForeColor = System.Drawing.Color.White;
-            this.btnNSu.IconChar = FontAwesome.Sharp.IconChar.UserGraduate;
-            this.btnNSu.IconColor = System.Drawing.Color.White;
-            this.btnNSu.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnNSu.IconSize = 40;
-            this.btnNSu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNSu.Location = new System.Drawing.Point(0, 467);
-            this.btnNSu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnNSu.Name = "btnNSu";
-            this.btnNSu.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
-            this.btnNSu.Size = new System.Drawing.Size(246, 85);
-            this.btnNSu.TabIndex = 5;
-            this.btnNSu.Text = "Nhân sự";
-            this.btnNSu.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNSu.UseVisualStyleBackColor = true;
-            this.btnNSu.Click += new System.EventHandler(this.btnNSu_Click);
-            this.btnNSu.Leave += new System.EventHandler(this.btnNSu_Leave);
-            // 
-            // btnDeTai
-            // 
-            this.btnDeTai.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnDeTai.FlatAppearance.BorderSize = 0;
-            this.btnDeTai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDeTai.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeTai.ForeColor = System.Drawing.Color.White;
-            this.btnDeTai.IconChar = FontAwesome.Sharp.IconChar.BookReader;
-            this.btnDeTai.IconColor = System.Drawing.Color.White;
-            this.btnDeTai.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnDeTai.IconSize = 40;
-            this.btnDeTai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDeTai.Location = new System.Drawing.Point(0, 382);
-            this.btnDeTai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.btnDeTai.Name = "btnDeTai";
-            this.btnDeTai.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
-            this.btnDeTai.Size = new System.Drawing.Size(246, 85);
-            this.btnDeTai.TabIndex = 4;
-            this.btnDeTai.Text = "Đề tài   ";
-            this.btnDeTai.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnDeTai.UseVisualStyleBackColor = true;
-            this.btnDeTai.Click += new System.EventHandler(this.btnDeTai_Click);
-            this.btnDeTai.Leave += new System.EventHandler(this.btnDeTai_Leave);
-            // 
             // btnThongTin
             // 
             this.btnThongTin.Dock = System.Windows.Forms.DockStyle.Top;
@@ -205,12 +279,12 @@ namespace TTCSDL
             this.btnThongTin.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnThongTin.IconSize = 40;
             this.btnThongTin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongTin.Location = new System.Drawing.Point(0, 297);
+            this.btnThongTin.Location = new System.Drawing.Point(0, 272);
             this.btnThongTin.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnThongTin.Name = "btnThongTin";
             this.btnThongTin.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
             this.btnThongTin.Size = new System.Drawing.Size(246, 85);
-            this.btnThongTin.TabIndex = 3;
+            this.btnThongTin.TabIndex = 2;
             this.btnThongTin.Text = "Thông tin";
             this.btnThongTin.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThongTin.UseVisualStyleBackColor = true;
@@ -230,7 +304,7 @@ namespace TTCSDL
             this.btnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnHome.IconSize = 40;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(0, 212);
+            this.btnHome.Location = new System.Drawing.Point(0, 187);
             this.btnHome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnHome.Name = "btnHome";
             this.btnHome.Padding = new System.Windows.Forms.Padding(17, 0, 0, 0);
@@ -249,7 +323,7 @@ namespace TTCSDL
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(246, 212);
+            this.panel2.Size = new System.Drawing.Size(246, 187);
             this.panel2.TabIndex = 1;
             // 
             // pictureBox3
@@ -260,7 +334,7 @@ namespace TTCSDL
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(246, 212);
+            this.pictureBox3.Size = new System.Drawing.Size(246, 187);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -313,6 +387,7 @@ namespace TTCSDL
             // 
             // pnlLoad
             // 
+            this.pnlLoad.BackColor = System.Drawing.Color.White;
             this.pnlLoad.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlLoad.Location = new System.Drawing.Point(246, 55);
             this.pnlLoad.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
@@ -326,14 +401,13 @@ namespace TTCSDL
             this.guna2Elipse1.BorderRadius = 20;
             this.guna2Elipse1.TargetControl = this;
             // 
-            // pnlNav
+            // pnlNav1
             // 
-            this.pnlNav.BackColor = System.Drawing.Color.White;
-            this.pnlNav.FillColor = System.Drawing.Color.White;
-            this.pnlNav.Location = new System.Drawing.Point(3, 212);
-            this.pnlNav.Name = "pnlNav";
-            this.pnlNav.Size = new System.Drawing.Size(6, 85);
-            this.pnlNav.TabIndex = 10;
+            this.pnlNav1.BackColor = System.Drawing.Color.White;
+            this.pnlNav1.Location = new System.Drawing.Point(0, 3);
+            this.pnlNav1.Name = "pnlNav1";
+            this.pnlNav1.Size = new System.Drawing.Size(6, 61);
+            this.pnlNav1.TabIndex = 0;
             // 
             // Main
             // 
@@ -355,6 +429,7 @@ namespace TTCSDL
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
+            this.pnldtuser.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel3.ResumeLayout(false);
@@ -369,8 +444,6 @@ namespace TTCSDL
         private System.Windows.Forms.Panel panel2;
         private FontAwesome.Sharp.IconButton btnHome;
         private FontAwesome.Sharp.IconButton btnLogout;
-        private FontAwesome.Sharp.IconButton btnNSu;
-        private FontAwesome.Sharp.IconButton btnDeTai;
         private FontAwesome.Sharp.IconButton btnThongTin;
         private System.Windows.Forms.PictureBox pictureBox3;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
@@ -378,9 +451,15 @@ namespace TTCSDL
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel pnlLoad;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.Panel pnldtuser;
+        private FontAwesome.Sharp.IconButton btndkdt;
         private FontAwesome.Sharp.IconButton btnPDuyet;
         private FontAwesome.Sharp.IconButton btnTKe;
-        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2Panel pnlNav;
+        private FontAwesome.Sharp.IconButton btnNSu;
+        private FontAwesome.Sharp.IconButton btndtkhoa;
+        private FontAwesome.Sharp.IconButton btnDeTai;
+        private System.Windows.Forms.Panel pnlNav;
+        private Guna.UI2.WinForms.Guna2Panel pnlNav1;
     }
 }

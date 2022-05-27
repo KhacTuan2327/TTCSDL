@@ -22,6 +22,7 @@ namespace TTCSDL
         {
             modify = new Modify();
             menuTTItem.Visible = false;
+            cmbTrangThai.Text = "Tất cả";
             // Hiện bảng
             try
             {
@@ -34,8 +35,26 @@ namespace TTCSDL
 
         }
 
+        private void hideSubMenu()
+        {
+            if (menuTTItem.Visible == true)
+                menuTTItem.Visible = false;
+        }
+
+        private void showSubMenu(Panel subMenu)
+        {
+            if (subMenu.Visible == false)
+            {
+                hideSubMenu();
+                subMenu.Visible = true;
+            }
+            else
+                subMenu.Visible = false;
+        }
+
         private void cmbTrangThai_SelectedIndexChanged(object sender, EventArgs e)
         {
+            hideSubMenu();
             if (cmbTrangThai.Text == "Tất cả")
             {
                 dataDeTai.DataSource = modify.Table("tt_detai_pd");
@@ -64,7 +83,7 @@ namespace TTCSDL
 
         private void btnTT_Click(object sender, EventArgs e)
         {
-            menuTTItem.Visible = true;
+            showSubMenu(menuTTItem);
         }
 
         private void btnTT_Leave(object sender, EventArgs e)
@@ -76,16 +95,19 @@ namespace TTCSDL
         {
             TTThanhVien_PD tTThanhVien_PD = new TTThanhVien_PD(txtmadt.Text);
             tTThanhVien_PD.ShowDialog();
+            hideSubMenu();
         }
 
         private void btnDt_Click(object sender, EventArgs e)
         {
             TTDeTai_PD tTDeTai_PD = new TTDeTai_PD(txtmadt.Text);
             tTDeTai_PD.ShowDialog();
+            hideSubMenu();
         }
 
         private void btnDuyet_Click(object sender, EventArgs e)
         {
+            hideSubMenu();
             if(cmbTrangThai.Text == "Đã duyệt")
             {
                 MessageBox.Show("Đề tài đã được duyệt", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -100,12 +122,14 @@ namespace TTCSDL
                 {
                     modify.Command("pheduyet'"+txtmadt.Text+"'");
                     MessageBox.Show("Phê duyệt đề tài thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    PheDuyet_Load(sender, e);
                 }
                 else
                 {
                     return;
                 }
             }
+            PheDuyet_Load(sender, e);
         }
     }
 }

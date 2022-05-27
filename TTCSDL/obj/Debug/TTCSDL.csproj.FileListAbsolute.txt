@@ -501,9 +501,7 @@ C:\Users\Dell service\Source\Repos\TTCSDL\TTCSDL\bin\Debug\es\DevExpress.Office.
 C:\Users\Dell service\Source\Repos\TTCSDL\TTCSDL\bin\Debug\ja\DevExpress.Office.v19.2.Core.resources.dll
 C:\Users\Dell service\Source\Repos\TTCSDL\TTCSDL\bin\Debug\ru\DevExpress.Office.v19.2.Core.resources.dll
 C:\Users\Dell service\Source\Repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.DeTai1.resources
-C:\Users\Dell service\Source\Repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.HoiDong.resources
 C:\Users\Dell service\Source\Repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.TTCapQL.resources
-C:\Users\Dell service\Source\Repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.TTTieuBan.resources
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.TTBoMon.resources
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.ThanhVienTB.resources
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\bin\Debug\Microsoft.AspNetCore.Hosting.Abstractions.dll
@@ -586,3 +584,11 @@ C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\bin\Debug\ru\DevExpress.XtraSch
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.TTThanhVien_PD.resources
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.TTDeTai_PD.resources
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.BaiBaoKH.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.btndt.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.TTDeTai_TB.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.QuyetDinh_DT.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.DeTai_User.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.NhanSu_User.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.BaoCaoTD.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.ThongKeBoMon.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.DangKy.resources

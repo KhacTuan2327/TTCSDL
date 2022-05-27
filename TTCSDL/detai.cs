@@ -11,44 +11,44 @@ namespace TTCSDL
         private string madt;
         private string tendt;
         private string kinhphi;
-        private string chudt;
-        private string nam;
-        private string tiendo;
-        private string tennganh;
-        private string trangthai;
         private string ngaydangky;
-        private string capql;
+        private string nam;
         private string tieuban;
+        private string nganh;
+        private string capql;
+        private string chudt;
+        private string trangthai;
+        private string ketqua;
 
         public detai()
         {
         }
 
-        public detai(string madt, string tendt, string kinhphi, string ngaydangky, string nam, string tiendo, string trangthai, string tieuban, string tennganh, string capql, string chudt)
+        public detai(string madt, string tendt, string kinhphi, string ngaydangky, string nam, string tieuban, string nganh, string capql, string chudt, string trangthai, string ketqua)
         {
             this.madt = madt;
             this.tendt = tendt;
             this.kinhphi = kinhphi;
-            this.chudt = chudt;
-            this.nam = nam;
-            this.tiendo = tiendo;
-            this.tennganh = tennganh;
-            this.trangthai = trangthai;
             this.ngaydangky = ngaydangky;
-            this.capql = capql;
+            this.nam = nam;
             this.tieuban = tieuban;
+            this.nganh = nganh;
+            this.capql = capql;
+            this.chudt = chudt;
+            this.trangthai = trangthai;
+            this.ketqua = ketqua;
         }
 
         public string Madt { get => madt; set => madt = value; }
         public string Tendt { get => tendt; set => tendt = value; }
         public string Kinhphi { get => kinhphi; set => kinhphi = value; }
-        public string Chudt { get => chudt; set => chudt = value; }
-        public string Nam { get => nam; set => nam = value; }
-        public string Tiendo { get => tiendo; set => tiendo = value; }
-        public string Tennganh { get => tennganh; set => tennganh = value; }
-        public string Trangthai { get => trangthai; set => trangthai = value; }
         public string Ngaydangky { get => ngaydangky; set => ngaydangky = value; }
-        public string Capql { get => capql; set => capql = value; }
+        public string Nam { get => nam; set => nam = value; }
         public string Tieuban { get => tieuban; set => tieuban = value; }
+        public string Nganh { get => nganh; set => nganh = value; }
+        public string Capql { get => capql; set => capql = value; }
+        public string Chudt { get => chudt; set => chudt = value; }
+        public string Trangthai { get => trangthai; set => trangthai = value; }
+        public string Ketqua { get => ketqua; set => ketqua = value; }
     }
 }

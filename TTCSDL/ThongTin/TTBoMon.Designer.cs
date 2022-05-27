@@ -118,7 +118,6 @@ namespace TTCSDL
             this.dataDT.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataDT.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataDT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataDT_CellClick);
-            this.dataDT.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataDT_CellContentClick);
             // 
             // lbThongTinDT
             // 

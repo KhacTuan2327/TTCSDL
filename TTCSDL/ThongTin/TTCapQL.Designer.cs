@@ -61,6 +61,7 @@ namespace TTCSDL
             this.txtMoTa.ForeColor = System.Drawing.Color.Black;
             this.txtMoTa.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMoTa.Location = new System.Drawing.Point(1082, 234);
+            this.txtMoTa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMoTa.Name = "txtMoTa";
             this.txtMoTa.PasswordChar = '\0';
             this.txtMoTa.PlaceholderText = "";
@@ -82,6 +83,7 @@ namespace TTCSDL
             this.txtTenCap.ForeColor = System.Drawing.Color.Black;
             this.txtTenCap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtTenCap.Location = new System.Drawing.Point(1082, 168);
+            this.txtTenCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTenCap.Name = "txtTenCap";
             this.txtTenCap.PasswordChar = '\0';
             this.txtTenCap.PlaceholderText = "";
@@ -103,6 +105,7 @@ namespace TTCSDL
             this.txtMaCap.ForeColor = System.Drawing.Color.Black;
             this.txtMaCap.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaCap.Location = new System.Drawing.Point(1082, 108);
+            this.txtMaCap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtMaCap.Name = "txtMaCap";
             this.txtMaCap.PasswordChar = '\0';
             this.txtMaCap.PlaceholderText = "";
@@ -233,7 +236,7 @@ namespace TTCSDL
             // TTCapQL
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(1522, 891);
             this.Controls.Add(this.dataCQL);
             this.Controls.Add(this.txtMoTa);

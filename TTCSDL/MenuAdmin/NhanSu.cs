@@ -149,7 +149,7 @@ namespace TTCSDL
                 //string str;
                 //DateTime.ParseExact(str, NgaySinh, null);
 
-                NgaySinh.Value = (DateTime)datanhansu.SelectedRows[0].Cells[2].Value;
+                NgaySinh.Text = datanhansu.SelectedRows[0].Cells[2].Value.ToString();
 
                 string gt;
                 if (rdoNam.Checked == true)

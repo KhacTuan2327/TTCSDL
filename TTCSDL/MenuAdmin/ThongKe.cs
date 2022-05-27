@@ -7,9 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.Office.Interop.Excel;
+using System.Data.SqlClient;
+//using Microsoft.Office.Interop.Excel;
 using app = Microsoft.Office.Interop.Excel.Application;
-
 namespace TTCSDL
 {
     public partial class ThongKe : Form
@@ -23,16 +23,52 @@ namespace TTCSDL
         Modify modify = new Modify();
         Khoa khoa;
 
+        Connection cn = new Connection();
+        SqlConnection cnn;
+        SqlCommand cm;
+        SqlDataAdapter da;
+
+        /*
+        public void ShowCombobox()
+        {
+            cnn = Connection.getConnection();
+            cnn.Open();
+            cm = new SqlCommand("Select * from Khoa", cnn);
+            var dr = cm.ExecuteReader();
+            var dt = new DataTable();
+            dt.Load(dr);
+            dr.Dispose();
+            cbbkhoa.DisplayMember = "tenkhoa";
+            cbbkhoa.DataSource = dt;
+            
+        }
+        */
+
         private void ThongKe_Load(object sender, EventArgs e)
         {
-
+            //ShowCombobox();
         }
+
+        private Form activeForm = null;
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false; //luôn phải có khi mở form mới. Là dạng biểu mẫu cao cấp?
+            childForm.FormBorderStyle = FormBorderStyle.None; //luôn 
+            childForm.Dock = DockStyle.Fill; //luôn
+            panelmain.Controls.Add(childForm);
+            panelmain.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
+        }
+
 
         private void customizeDesing()
         {
             panelDonVi.Visible = false;
             panelCapQuanLy.Visible = false;
-            dataTK.DataSource = modify.Table("Select * from KHOA");
         }
 
         private void hideSubMenu()
@@ -66,9 +102,10 @@ namespace TTCSDL
 
         private void btnKhoa_Click(object sender, EventArgs e)
         {
-            dataTK.DataSource = modify.Table("select khoa.makhoa as MAKHOA, tenkhoa, tenbm AS TENBOMON, tendt AS TENDETAI, canbo.macb AS MACHUNHIEM, canbo.tencb AS TENCHUNHIEM , trangthai AS TRANGTHAI from khoa, bomon, canbo, detai where bomon.makhoa = khoa.makhoa and canbo.mabm = bomon.mabm and detai.macb = canbo.macb order by makhoa asc");
+            openChildForm(new ThongKeKhoa());
+
         }
-         
+
         private void dataTK_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -81,34 +118,38 @@ namespace TTCSDL
 
         private void btnBoMon_Click(object sender, EventArgs e)
         {
-            
-            dataTK.DataSource = modify.Table("select bomon.mabm, bomon.tenbm, canbo.macb, canbo.tencb, tendt, trangthai from khoa, bomon, canbo, detai where canbo.mabm = bomon.mabm and detai.macb = canbo.macb order by mabm");
+            openChildForm(new ThongKeBoMon());
+
         }
 
         private void btnNN_Click(object sender, EventArgs e)
         {
-            
-            dataTK.DataSource = modify.Table("SELECT CAPQUANLY.MACAP, CAPQUANLY.TENCAP, detai.MADT, detai.TENDT, CANBO.TENCB as TENCHUNHIEM from  canbo, DETAI, CAPQUANLY where CANBO.MACB = DETAI.MACB and DETAI.MACAP = CAPQUANLY.MACAP and CAPQUANLY.MACAP = N'CNN'");
+            openChildForm(new ThongKeCNN());
+            //dataTK.DataSource = modify.Table("SELECT CAPQUANLY.MACAP, CAPQUANLY.TENCAP, detai.MADT, detai.TENDT, CANBO.TENCB as TENCHUNHIEM from  canbo, DETAI, CAPQUANLY where CANBO.MACB = DETAI.MACB and DETAI.MACAP = CAPQUANLY.MACAP and CAPQUANLY.MACAP = N'CNN'");
         }
 
         private void btnBo_Click(object sender, EventArgs e)
         {
-            dataTK.DataSource = modify.Table("SELECT CAPQUANLY.MACAP, CAPQUANLY.TENCAP, detai.MADT, detai.TENDT, CANBO.TENCB as TENCHUNHIEM from  canbo, DETAI, CAPQUANLY where CANBO.MACB = DETAI.MACB and DETAI.MACAP = CAPQUANLY.MACAP and CAPQUANLY.MACAP = N'CB'");
+            openChildForm(new ThongKeCB());
+            //dataTK.DataSource = modify.Table("SELECT CAPQUANLY.MACAP, CAPQUANLY.TENCAP, detai.MADT, detai.TENDT, CANBO.TENCB as TENCHUNHIEM from  canbo, DETAI, CAPQUANLY where CANBO.MACB = DETAI.MACB and DETAI.MACAP = CAPQUANLY.MACAP and CAPQUANLY.MACAP = N'CB'");
         }
 
         private void btnHV_Click(object sender, EventArgs e)
         {
-            dataTK.DataSource = modify.Table("SELECT CAPQUANLY.MACAP, CAPQUANLY.TENCAP, detai.MADT, detai.TENDT, CANBO.TENCB as TENCHUNHIEM from  canbo, DETAI, CAPQUANLY where CANBO.MACB = DETAI.MACB and DETAI.MACAP = CAPQUANLY.MACAP and CAPQUANLY.MACAP = N'CHV'");
+            openChildForm(new ThongKeCHV());
+            // dataTK.DataSource = modify.Table("SELECT CAPQUANLY.MACAP, CAPQUANLY.TENCAP, detai.MADT, detai.TENDT, CANBO.TENCB as TENCHUNHIEM from  canbo, DETAI, CAPQUANLY where CANBO.MACB = DETAI.MACB and DETAI.MACAP = CAPQUANLY.MACAP and CAPQUANLY.MACAP = N'CHV'");
         }
 
         private void btnCS_Click(object sender, EventArgs e)
         {
-            dataTK.DataSource = modify.Table("SELECT CAPQUANLY.MACAP, CAPQUANLY.TENCAP, detai.MADT, detai.TENDT, CANBO.TENCB as TENCHUNHIEM from  canbo, DETAI, CAPQUANLY where CANBO.MACB = DETAI.MACB and DETAI.MACAP = CAPQUANLY.MACAP and CAPQUANLY.MACAP = N'CCS'");
+            openChildForm(new ThongKeCCS());
+            //dataTK.DataSource = modify.Table("SELECT CAPQUANLY.MACAP, CAPQUANLY.TENCAP, detai.MADT, detai.TENDT, CANBO.TENCB as TENCHUNHIEM from  canbo, DETAI, CAPQUANLY where CANBO.MACB = DETAI.MACB and DETAI.MACAP = CAPQUANLY.MACAP and CAPQUANLY.MACAP = N'CCS'");
         }
 
         private void btnChuyenNganh_Click(object sender, EventArgs e)
         {
-            dataTK.DataSource = modify.Table("select CHUYENNGANH.MANGANH, CHUYENNGANH.TENCN, DETAI.MADT, detai.tendt, CANBO.TENCB, trangthai from CHUYENNGANH, DETAI, CANBO where CANBO.MACB = DETAI.MACB and DETAI.MANGANH = CHUYENNGANH.MANGANH order by MANGANH asc");
+            openChildForm(new ThongKeChuyenNganh());
+            // dataTK.DataSource = modify.Table("select CHUYENNGANH.MANGANH, CHUYENNGANH.TENCN, DETAI.MADT, detai.tendt, CANBO.TENCB, trangthai from CHUYENNGANH, DETAI, CANBO where CANBO.MACB = DETAI.MACB and DETAI.MANGANH = CHUYENNGANH.MANGANH order by MANGANH asc");
         }
 
         private void export2Excel(DataGridView g, string tenTap)
@@ -133,8 +174,23 @@ namespace TTCSDL
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 //gọi hàm ToExcel() với tham số là dtgDSHS và filename từ SaveFileDialog
-                export2Excel(dataTK, saveFileDialog1.FileName);
+                //export2Excel(dataTK, saveFileDialog1.FileName);
             }
+        }
+
+        private void cbbkhoa_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void search_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelmain_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

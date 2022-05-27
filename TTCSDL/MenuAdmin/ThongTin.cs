@@ -58,7 +58,7 @@ namespace TTCSDL
 
         private void btnTB_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new TTTieuBan());
+            OpenChildForm(new btndt());
             setBackColorMenuItem(pnlNav, btnTB);
         }
 
