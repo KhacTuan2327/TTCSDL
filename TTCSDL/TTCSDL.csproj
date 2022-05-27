@@ -166,6 +166,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Khoa.cs" />
     <Compile Include="MenuUser\DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -293,12 +294,6 @@
     <Compile Include="LoginForm\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Connect\Modify.cs" />
     <Compile Include="LoginForm\NewPassForm.cs">
       <SubType>Form</SubType>
@@ -418,9 +413,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm\LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm\NewPassForm.resx">
       <DependentUpon>NewPassForm.cs</DependentUpon>
