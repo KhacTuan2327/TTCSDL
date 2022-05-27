@@ -184,8 +184,8 @@ namespace TTCSDL
             if (datanhansu.Rows.Count > 1)
             {
                 string choose = datanhansu.SelectedRows[0].Cells[0].Value.ToString();
-                string query = "DELETE CANBO ";
-                query += "WHERE MACB = '" + choose + "'";
+                string query = "XOA_CANBO";
+                query += "'" + choose + "'";
 
                 try //insert into khoa value ('khoa.Id', "N'Khoa.name'"
                 {

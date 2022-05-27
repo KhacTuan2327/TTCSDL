@@ -166,8 +166,8 @@ namespace TTCSDL
             if (dataDeTai.Rows.Count > 1)
             {
                 string choose = dataDeTai.SelectedRows[0].Cells[0].Value.ToString();
-                string query = "DELETE DETAI ";
-                query += "WHERE MADT = '" + choose + "'";
+                string query = "XOA_DETAI";
+                query += "'" + choose + "'";
 
                 try //insert into khoa value ('khoa.Id', "N'Khoa.name'"
                 {
