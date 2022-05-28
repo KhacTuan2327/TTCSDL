@@ -494,6 +494,7 @@ namespace TTCSDL
             this.search.SelectedText = "";
             this.search.Size = new System.Drawing.Size(366, 39);
             this.search.TabIndex = 79;
+            this.search.TextChanged += new System.EventHandler(this.search_TextChanged);
             // 
             // btnExportFile
             // 

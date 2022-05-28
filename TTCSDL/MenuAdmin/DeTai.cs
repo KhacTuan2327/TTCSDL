@@ -204,6 +204,20 @@ namespace TTCSDL
             quyetDinh_DT.ShowDialog();
         }
 
+        private void search_TextChanged(object sender, EventArgs e)
+        {
+            string name = search.Text.Trim();
+            if (name == "")
+            {
+                DeTai_Load(sender, e);
+            }
+            else
+            {
+                string query = "select * from detai where madt like '%" + name + "%'";
+                dataDeTai.DataSource = modify.Table(query);
+            }
+        }
+
         private void dataDeTai_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dataDeTai.Rows.Count > 1)

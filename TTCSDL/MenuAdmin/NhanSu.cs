@@ -209,14 +209,12 @@ namespace TTCSDL
             if (datanhansu.Rows.Count > 1)
             {
                 string choose = datanhansu.SelectedRows[0].Cells[0].Value.ToString();
-                string query = "UPDATE CANBO SET TENCB = N'" + Nhansu.Name + " ', NGAYSINH = N'" + Nhansu.Ns + " ', GIOITINH = N' " + Nhansu.Gt + "', CAPBAC = N'" + Nhansu.Cb + "', CHUCVU = N'" + Nhansu.Cv + "',SĐT = N'" + Nhansu.Sdt + "',MABM = N'" + Nhansu.Mabm + "'";
-                query += "Where MACB = N'" + choose + " '";
+                
 
                 try //insert into khoa value ('khoa.Id', "N'Khoa.name'"
                 {
                     if (MessageBox.Show("Bạn có muốn lưu không?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                     {
-                        modify.Command(query);
                         MessageBox.Show("Lưu thành công!");
                         NhanSu_Load(sender, e);
                     }
@@ -225,6 +223,20 @@ namespace TTCSDL
                 {
                     MessageBox.Show("Lỗi: " + ex.Message);
                 }
+            }
+        }
+
+        private void search_TextChanged(object sender, EventArgs e)
+        {
+            string name = search.Text.Trim();
+            if (name == "")
+            {
+                NhanSu_Load(sender, e);
+            }
+            else
+            {
+                string query = "select * from canbo where tencb like '%" + name + "%'";
+                datanhansu.DataSource = modify.Table(query);
             }
         }
     }
