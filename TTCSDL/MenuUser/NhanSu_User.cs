@@ -59,6 +59,12 @@ namespace TTCSDL
             }
         }
 
+        private void search_TextChanged(object sender, EventArgs e)
+        {
+            string query = "SEARCH_CB'" + search.Text + "'";
+            dataDeTai.DataSource = modify.Table(query);
+        }
+
         public NhanSu_User(string makhoa, string quyen)
         {
             InitializeComponent();

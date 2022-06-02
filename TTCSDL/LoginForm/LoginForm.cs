@@ -67,5 +67,13 @@ namespace TTCSDL
         {
             pass.UseSystemPasswordChar = true;
         }
+
+        private void linkDk_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            DangKyTK dktk = new DangKyTK();
+            dktk.ShowDialog();
+            this.Close();
+        }
     }
 }

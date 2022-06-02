@@ -63,11 +63,11 @@ namespace TTCSDL
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtkq = new System.Windows.Forms.TextBox();
-            this.txtnganh = new System.Windows.Forms.TextBox();
-            this.txttieuban = new System.Windows.Forms.TextBox();
-            this.txtcapql = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.txttieuban = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtcapql = new System.Windows.Forms.TextBox();
+            this.txtnganh = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataDeTai)).BeginInit();
             this.pnlBtn.SuspendLayout();
@@ -248,6 +248,7 @@ namespace TTCSDL
             this.dataDeTai.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataDeTai.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataDeTai.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataDeTai_CellClick);
+            this.dataDeTai.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataDeTai_CellContentClick);
             // 
             // btnExportFile
             // 
@@ -521,39 +522,6 @@ namespace TTCSDL
             this.txtkq.Size = new System.Drawing.Size(382, 29);
             this.txtkq.TabIndex = 103;
             // 
-            // txtnganh
-            // 
-            this.txtnganh.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtnganh.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.txtnganh.Location = new System.Drawing.Point(267, 773);
-            this.txtnganh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtnganh.Multiline = true;
-            this.txtnganh.Name = "txtnganh";
-            this.txtnganh.Size = new System.Drawing.Size(382, 29);
-            this.txtnganh.TabIndex = 105;
-            // 
-            // txttieuban
-            // 
-            this.txttieuban.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txttieuban.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.txttieuban.Location = new System.Drawing.Point(922, 587);
-            this.txttieuban.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txttieuban.Multiline = true;
-            this.txttieuban.Name = "txttieuban";
-            this.txttieuban.Size = new System.Drawing.Size(382, 29);
-            this.txttieuban.TabIndex = 106;
-            // 
-            // txtcapql
-            // 
-            this.txtcapql.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtcapql.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.txtcapql.Location = new System.Drawing.Point(267, 712);
-            this.txtcapql.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtcapql.Multiline = true;
-            this.txtcapql.Name = "txtcapql";
-            this.txtcapql.Size = new System.Drawing.Size(382, 29);
-            this.txtcapql.TabIndex = 107;
-            // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -578,16 +546,60 @@ namespace TTCSDL
             this.label3.TabIndex = 109;
             this.label3.Text = "Trạng Thái";
             // 
+            // txttieuban
+            // 
+            this.txttieuban.BackColor = System.Drawing.Color.Transparent;
+            this.txttieuban.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txttieuban.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txttieuban.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txttieuban.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txttieuban.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txttieuban.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txttieuban.ItemHeight = 30;
+            this.txttieuban.Items.AddRange(new object[] {
+            "TB01",
+            "TB02",
+            "TB03",
+            "TB04",
+            "TB06"});
+            this.txttieuban.Location = new System.Drawing.Point(922, 581);
+            this.txttieuban.Name = "txttieuban";
+            this.txttieuban.Size = new System.Drawing.Size(382, 36);
+            this.txttieuban.TabIndex = 136;
+            this.txttieuban.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtcapql
+            // 
+            this.txtcapql.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtcapql.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtcapql.Location = new System.Drawing.Point(267, 708);
+            this.txtcapql.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtcapql.Multiline = true;
+            this.txtcapql.Name = "txtcapql";
+            this.txtcapql.Size = new System.Drawing.Size(382, 29);
+            this.txtcapql.TabIndex = 139;
+            // 
+            // txtnganh
+            // 
+            this.txtnganh.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtnganh.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtnganh.Location = new System.Drawing.Point(267, 770);
+            this.txtnganh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtnganh.Multiline = true;
+            this.txtnganh.Name = "txtnganh";
+            this.txtnganh.Size = new System.Drawing.Size(382, 29);
+            this.txtnganh.TabIndex = 140;
+            // 
             // DeTai
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(1532, 898);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtnganh);
             this.Controls.Add(this.txtcapql);
             this.Controls.Add(this.txttieuban);
-            this.Controls.Add(this.txtnganh);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtkq);
             this.Controls.Add(this.label4);
@@ -654,10 +666,10 @@ namespace TTCSDL
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtkq;
-        private System.Windows.Forms.TextBox txtnganh;
-        private System.Windows.Forms.TextBox txttieuban;
-        private System.Windows.Forms.TextBox txtcapql;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2ComboBox txttieuban;
+        private System.Windows.Forms.TextBox txtcapql;
+        private System.Windows.Forms.TextBox txtnganh;
     }
 }

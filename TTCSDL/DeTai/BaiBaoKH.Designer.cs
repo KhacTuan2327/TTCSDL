@@ -360,7 +360,7 @@ namespace TTCSDL
             this.Controls.Add(this.label1);
             this.Name = "BaiBaoKH";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BaiBaoKH";
+            this.Text = "Bài báo";
             this.Load += new System.EventHandler(this.BaiBaoKH_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtDsBaiBao)).EndInit();
             this.ResumeLayout(false);

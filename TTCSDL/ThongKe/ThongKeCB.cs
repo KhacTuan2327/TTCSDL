@@ -73,7 +73,8 @@ namespace TTCSDL
 
         private void ThongKeCB_Load(object sender, EventArgs e)
         {
-
+            string query = "SEARCH_DT'" + search.Text + "'";
+            dataTK.DataSource = modify.Table(query);
         }
     }
 }

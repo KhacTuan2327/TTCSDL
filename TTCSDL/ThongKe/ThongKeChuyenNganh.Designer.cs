@@ -29,9 +29,9 @@ namespace TTCSDL
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.cbbnganh = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dataTK = new Guna.UI.WinForms.GunaDataGridView();
@@ -49,7 +49,7 @@ namespace TTCSDL
             this.cbbnganh.FormattingEnabled = true;
             this.cbbnganh.Location = new System.Drawing.Point(37, 71);
             this.cbbnganh.Name = "cbbnganh";
-            this.cbbnganh.Size = new System.Drawing.Size(644, 37);
+            this.cbbnganh.Size = new System.Drawing.Size(644, 33);
             this.cbbnganh.TabIndex = 89;
             this.cbbnganh.SelectedIndexChanged += new System.EventHandler(this.cbbkhoa_SelectedIndexChanged);
             // 
@@ -60,36 +60,36 @@ namespace TTCSDL
             this.label1.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label1.Location = new System.Drawing.Point(21, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 30);
+            this.label1.Size = new System.Drawing.Size(189, 25);
             this.label1.TabIndex = 98;
             this.label1.Text = "Chọn Chuyên ngành:";
             // 
             // dataTK
             // 
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.dataTK.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dataTK.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataTK.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataTK.BackgroundColor = System.Drawing.Color.White;
             this.dataTK.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dataTK.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dataTK.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataTK.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataTK.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataTK.ColumnHeadersHeight = 32;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.DarkSlateBlue;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataTK.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.DarkSlateBlue;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataTK.DefaultCellStyle = dataGridViewCellStyle3;
             this.dataTK.EnableHeadersVisualStyles = false;
             this.dataTK.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dataTK.Location = new System.Drawing.Point(7, 172);
@@ -132,7 +132,7 @@ namespace TTCSDL
             this.lbSL.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.lbSL.Location = new System.Drawing.Point(241, 124);
             this.lbSL.Name = "lbSL";
-            this.lbSL.Size = new System.Drawing.Size(23, 28);
+            this.lbSL.Size = new System.Drawing.Size(19, 23);
             this.lbSL.TabIndex = 130;
             this.lbSL.Text = "0";
             // 
@@ -143,7 +143,7 @@ namespace TTCSDL
             this.soluong.ForeColor = System.Drawing.Color.DarkBlue;
             this.soluong.Location = new System.Drawing.Point(22, 123);
             this.soluong.Name = "soluong";
-            this.soluong.Size = new System.Drawing.Size(213, 30);
+            this.soluong.Size = new System.Drawing.Size(185, 25);
             this.soluong.TabIndex = 129;
             this.soluong.Text = "Tổng số lượng đề tài";
             // 
@@ -169,6 +169,7 @@ namespace TTCSDL
             this.search.SelectedText = "";
             this.search.Size = new System.Drawing.Size(320, 47);
             this.search.TabIndex = 132;
+            this.search.TextChanged += new System.EventHandler(this.search_TextChanged);
             // 
             // btnExportFile
             // 

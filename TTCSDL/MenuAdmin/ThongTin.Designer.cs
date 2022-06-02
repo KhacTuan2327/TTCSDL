@@ -32,11 +32,12 @@ namespace TTCSDL
         private void InitializeComponent()
         {
             this.panelLeft = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.pnlNav = new System.Windows.Forms.Panel();
+            this.btnChuyenNganh = new Guna.UI2.WinForms.Guna2Button();
             this.btnTB = new Guna.UI2.WinForms.Guna2Button();
             this.btnKhoa = new Guna.UI2.WinForms.Guna2Button();
             this.btnCapQL = new Guna.UI2.WinForms.Guna2Button();
-            this.panelBody = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.btncn = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.pnlNav = new Guna.UI2.WinForms.Guna2Panel();
             this.panelLeft.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +48,7 @@ namespace TTCSDL
             this.panelLeft.BorderRadius = 1;
             this.panelLeft.BorderThickness = 3;
             this.panelLeft.Controls.Add(this.pnlNav);
+            this.panelLeft.Controls.Add(this.btnChuyenNganh);
             this.panelLeft.Controls.Add(this.btnTB);
             this.panelLeft.Controls.Add(this.btnKhoa);
             this.panelLeft.Controls.Add(this.btnCapQL);
@@ -57,13 +59,25 @@ namespace TTCSDL
             this.panelLeft.Size = new System.Drawing.Size(1560, 54);
             this.panelLeft.TabIndex = 0;
             // 
-            // pnlNav
+            // btnChuyenNganh
             // 
-            this.pnlNav.BackColor = System.Drawing.Color.White;
-            this.pnlNav.Location = new System.Drawing.Point(68, 5);
-            this.pnlNav.Name = "pnlNav";
-            this.pnlNav.Size = new System.Drawing.Size(198, 6);
-            this.pnlNav.TabIndex = 0;
+            this.btnChuyenNganh.BackColor = System.Drawing.Color.Turquoise;
+            this.btnChuyenNganh.BorderRadius = 5;
+            this.btnChuyenNganh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnChuyenNganh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnChuyenNganh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnChuyenNganh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnChuyenNganh.FillColor = System.Drawing.Color.Teal;
+            this.btnChuyenNganh.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChuyenNganh.ForeColor = System.Drawing.Color.White;
+            this.btnChuyenNganh.Location = new System.Drawing.Point(685, 5);
+            this.btnChuyenNganh.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnChuyenNganh.Name = "btnChuyenNganh";
+            this.btnChuyenNganh.Size = new System.Drawing.Size(198, 39);
+            this.btnChuyenNganh.TabIndex = 3;
+            this.btnChuyenNganh.Text = "Chuyên ngành";
+            this.btnChuyenNganh.Click += new System.EventHandler(this.btnChuyenNganh_Click);
+            this.btnChuyenNganh.Leave += new System.EventHandler(this.btnChuyenNganh_Leave);
             // 
             // btnTB
             // 
@@ -125,21 +139,29 @@ namespace TTCSDL
             this.btnCapQL.Click += new System.EventHandler(this.btnCapQL_Click);
             this.btnCapQL.Leave += new System.EventHandler(this.btnCapQL_Leave);
             // 
-            // panelBody
+            // btncn
             // 
-            this.panelBody.BackColor = System.Drawing.Color.White;
-            this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelBody.Location = new System.Drawing.Point(0, 54);
-            this.panelBody.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(1560, 888);
-            this.panelBody.TabIndex = 2;
+            this.btncn.BackColor = System.Drawing.Color.White;
+            this.btncn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btncn.Location = new System.Drawing.Point(0, 54);
+            this.btncn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btncn.Name = "btncn";
+            this.btncn.Size = new System.Drawing.Size(1560, 888);
+            this.btncn.TabIndex = 2;
+            // 
+            // pnlNav
+            // 
+            this.pnlNav.BackColor = System.Drawing.Color.White;
+            this.pnlNav.Location = new System.Drawing.Point(68, 8);
+            this.pnlNav.Name = "pnlNav";
+            this.pnlNav.Size = new System.Drawing.Size(198, 6);
+            this.pnlNav.TabIndex = 0;
             // 
             // ThongTin
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1560, 942);
-            this.Controls.Add(this.panelBody);
+            this.Controls.Add(this.btncn);
             this.Controls.Add(this.panelLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -154,7 +176,7 @@ namespace TTCSDL
         #endregion
 
         private Guna.UI2.WinForms.Guna2GradientPanel panelLeft;
-        private Guna.UI2.WinForms.Guna2GradientPanel panelBody;
+        private Guna.UI2.WinForms.Guna2GradientPanel btncn;
         private Guna.UI2.WinForms.Guna2Button btnTB;
         private Guna.UI2.WinForms.Guna2Button btnCapQL;
         private Guna.UI2.WinForms.Guna2Button btnKhoa;
@@ -169,6 +191,7 @@ namespace TTCSDL
         {
             thongTin_Load = value;
         }
-        private System.Windows.Forms.Panel pnlNav;
+        private Guna.UI2.WinForms.Guna2Button btnChuyenNganh;
+        private Guna.UI2.WinForms.Guna2Panel pnlNav;
     }
 }

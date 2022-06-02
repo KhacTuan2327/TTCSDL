@@ -34,6 +34,8 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.linkDk = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.checkShow = new System.Windows.Forms.CheckBox();
             this.btnlogin = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -69,6 +71,7 @@
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox1.FillColor = System.Drawing.Color.White;
             this.guna2ControlBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Gray;
             this.guna2ControlBox1.Location = new System.Drawing.Point(902, 0);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -90,6 +93,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.linkDk);
+            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.linkLabel1);
             this.panel1.Controls.Add(this.checkShow);
             this.panel1.Controls.Add(this.btnlogin);
@@ -101,8 +106,30 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Location = new System.Drawing.Point(475, 36);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(462, 563);
+            this.panel1.Size = new System.Drawing.Size(477, 563);
             this.panel1.TabIndex = 17;
+            // 
+            // linkDk
+            // 
+            this.linkDk.AutoSize = true;
+            this.linkDk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkDk.Location = new System.Drawing.Point(291, 517);
+            this.linkDk.Name = "linkDk";
+            this.linkDk.Size = new System.Drawing.Size(50, 18);
+            this.linkDk.TabIndex = 24;
+            this.linkDk.TabStop = true;
+            this.linkDk.Text = "tại đây";
+            this.linkDk.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkDk_LinkClicked);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(159, 517);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(126, 18);
+            this.label1.TabIndex = 23;
+            this.label1.Text = "Đăng ký tài khoản";
             // 
             // linkLabel1
             // 
@@ -288,5 +315,7 @@
         private Guna.UI2.WinForms.Guna2TextBox user;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.LinkLabel linkDk;
+        private System.Windows.Forms.Label label1;
     }
 }

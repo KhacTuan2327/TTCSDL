@@ -588,3 +588,10 @@ C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.NhanSu_User.re
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.BaoCaoTD.resources
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.ThongKeBoMon.resources
 C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.DangKy.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.ChuyenNganh.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.DangKyTK.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.ThongKeCCS.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.ThongKeChuyenNganh.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.ThongKeCHV.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.ThongKeCNN.resources
+C:\Users\Dell service\source\repos\TTCSDL\TTCSDL\obj\Debug\TTCSDL.ThongKeKhoa.resources

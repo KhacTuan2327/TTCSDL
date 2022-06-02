@@ -49,7 +49,7 @@ namespace TTCSDL
             this.lbSL.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.lbSL.Location = new System.Drawing.Point(240, 113);
             this.lbSL.Name = "lbSL";
-            this.lbSL.Size = new System.Drawing.Size(23, 28);
+            this.lbSL.Size = new System.Drawing.Size(19, 23);
             this.lbSL.TabIndex = 134;
             this.lbSL.Text = "0";
             // 
@@ -60,7 +60,7 @@ namespace TTCSDL
             this.soluong.ForeColor = System.Drawing.Color.DarkBlue;
             this.soluong.Location = new System.Drawing.Point(21, 111);
             this.soluong.Name = "soluong";
-            this.soluong.Size = new System.Drawing.Size(213, 30);
+            this.soluong.Size = new System.Drawing.Size(185, 25);
             this.soluong.TabIndex = 133;
             this.soluong.Text = "Tổng số lượng đề tài";
             // 
@@ -86,6 +86,7 @@ namespace TTCSDL
             this.search.SelectedText = "";
             this.search.Size = new System.Drawing.Size(320, 47);
             this.search.TabIndex = 132;
+            this.search.TextChanged += new System.EventHandler(this.search_TextChanged);
             // 
             // btnExportFile
             // 

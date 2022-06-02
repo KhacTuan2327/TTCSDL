@@ -13,7 +13,7 @@ namespace TTCSDL
 {
     public partial class NewPassForm : Form
     {
-        private string messMail;
+        private string mess;
         public NewPassForm()
         {
             InitializeComponent();
@@ -21,7 +21,7 @@ namespace TTCSDL
         }
         public NewPassForm(string mess)
         {
-            this.messMail = mess;
+            this.mess = mess;
         }
         //Hiển thị mật khẩu
         private void checkShow_CheckedChanged(object sender, EventArgs e)
@@ -64,7 +64,7 @@ namespace TTCSDL
                 {
                     try
                     {
-                        string queryUpdate = "UPDATE DANGNHAP SET MATKHAU = '" + newPass.Text + "'WHERE EMAIL ='" + messMail + "'";
+                        string queryUpdate = "UPDATE DANGNHAP SET MATKHAU = '" + newPass.Text + "'WHERE EMAIL ='" + mess + "'";
                         modify.Command(queryUpdate);
                     }
                     catch (Exception ex)

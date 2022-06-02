@@ -139,6 +139,7 @@ namespace TTCSDL
 
         private void btnSave_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Bạn có muốn Lưu không?");
             /*if (CheckTextBoxes())
             {
                 GetValuesTextBox();
@@ -213,9 +214,14 @@ namespace TTCSDL
             }
             else
             {
-                string query = "select * from detai where madt like '%" + name + "%'";
+                string query = "SEARCH_DT'"+search.Text+"'";
                 dataDeTai.DataSource = modify.Table(query);
             }
+        }
+
+        private void dataDeTai_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
         private void dataDeTai_CellClick(object sender, DataGridViewCellEventArgs e)

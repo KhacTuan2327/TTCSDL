@@ -33,7 +33,6 @@ namespace TTCSDL
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dataDeTai = new Guna.UI.WinForms.GunaDataGridView();
-            this.search = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnExportFile = new FontAwesome.Sharp.IconButton();
             this.txtsdt = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -53,6 +52,7 @@ namespace TTCSDL
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.search = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataDeTai)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -119,29 +119,6 @@ namespace TTCSDL
             this.dataDeTai.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dataDeTai.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataDeTai_CellClick);
             // 
-            // search
-            // 
-            this.search.BorderRadius = 8;
-            this.search.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.search.DefaultText = "";
-            this.search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.search.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.search.ForeColor = System.Drawing.Color.Black;
-            this.search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.search.Location = new System.Drawing.Point(527, 25);
-            this.search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.search.Name = "search";
-            this.search.PasswordChar = '\0';
-            this.search.PlaceholderForeColor = System.Drawing.Color.Gray;
-            this.search.PlaceholderText = "Nhập vào thông tin cần tìm kiếm ...";
-            this.search.SelectedText = "";
-            this.search.Size = new System.Drawing.Size(366, 39);
-            this.search.TabIndex = 81;
-            // 
             // btnExportFile
             // 
             this.btnExportFile.FlatAppearance.BorderColor = System.Drawing.Color.Teal;
@@ -186,7 +163,7 @@ namespace TTCSDL
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.BackColor = System.Drawing.Color.LightCyan;
             this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Teal;
@@ -365,7 +342,7 @@ namespace TTCSDL
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.White;
+            this.label13.BackColor = System.Drawing.Color.LightCyan;
             this.label13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label13.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.ForeColor = System.Drawing.Color.Teal;
@@ -391,7 +368,7 @@ namespace TTCSDL
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.White;
+            this.label7.BackColor = System.Drawing.Color.LightCyan;
             this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Teal;
@@ -404,7 +381,7 @@ namespace TTCSDL
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.BackColor = System.Drawing.Color.LightCyan;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Teal;
@@ -417,7 +394,7 @@ namespace TTCSDL
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.BackColor = System.Drawing.Color.LightCyan;
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Teal;
@@ -430,7 +407,7 @@ namespace TTCSDL
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.BackColor = System.Drawing.Color.LightCyan;
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Teal;
@@ -450,6 +427,30 @@ namespace TTCSDL
             this.guna2PictureBox1.Size = new System.Drawing.Size(233, 252);
             this.guna2PictureBox1.TabIndex = 116;
             this.guna2PictureBox1.TabStop = false;
+            // 
+            // search
+            // 
+            this.search.BorderRadius = 8;
+            this.search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.search.DefaultText = "";
+            this.search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.search.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.search.ForeColor = System.Drawing.Color.Black;
+            this.search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.search.Location = new System.Drawing.Point(527, 25);
+            this.search.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.search.Name = "search";
+            this.search.PasswordChar = '\0';
+            this.search.PlaceholderForeColor = System.Drawing.Color.Gray;
+            this.search.PlaceholderText = "Nhập vào thông tin cần tìm kiếm ...";
+            this.search.SelectedText = "";
+            this.search.Size = new System.Drawing.Size(366, 39);
+            this.search.TabIndex = 81;
+            this.search.TextChanged += new System.EventHandler(this.search_TextChanged);
             // 
             // NhanSu_User
             // 
@@ -491,7 +492,6 @@ namespace TTCSDL
         #endregion
 
         private Guna.UI.WinForms.GunaDataGridView dataDeTai;
-        private Guna.UI2.WinForms.Guna2TextBox search;
         private FontAwesome.Sharp.IconButton btnExportFile;
         private Guna.UI2.WinForms.Guna2TextBox txtsdt;
         private System.Windows.Forms.Label label6;
@@ -511,5 +511,6 @@ namespace TTCSDL
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2TextBox search;
     }
 }

@@ -63,7 +63,6 @@ namespace TTCSDL
         private void sendToEmail_Click(object sender, EventArgs e)
         {
             string eml = email.Text;
-            NewPassForm passForm = new NewPassForm(eml);
             if (eml.Trim() == "")
             {
                 MessageBox.Show("Vui lòng nhập email!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -93,8 +92,9 @@ namespace TTCSDL
             {
                 if (codeVerify.Text == code.ToString())
                 {
-                    NewPassForm newPassForm = new NewPassForm();
-                    newPassForm.ShowDialog();
+                    string eml = email.Text;
+                    NewPassForm passForm = new NewPassForm(eml);
+                    passForm.ShowDialog();
                 }
             }
         }

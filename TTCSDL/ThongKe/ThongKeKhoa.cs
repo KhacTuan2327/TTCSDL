@@ -167,5 +167,11 @@ namespace TTCSDL
 
             }
         }
+
+        private void search_TextChanged(object sender, EventArgs e)
+        {
+            string query = "SEARCH_DT'" + search.Text + "'";
+            dataTK.DataSource = modify.Table(query);
+        }
     }
 }

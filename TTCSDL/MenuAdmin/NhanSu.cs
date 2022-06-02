@@ -235,9 +235,14 @@ namespace TTCSDL
             }
             else
             {
-                string query = "select * from canbo where tencb like '%" + name + "%'";
+                string query = "SEARCH_CB'"+search.Text+"'";
                 datanhansu.DataSource = modify.Table(query);
-            }
+            }   
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

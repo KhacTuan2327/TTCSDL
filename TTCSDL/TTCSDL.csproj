@@ -166,6 +166,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DangKyTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangKyTK.Designer.cs">
+      <DependentUpon>DangKyTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThongTin\ChuyenNganh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThongTin\ChuyenNganh.Designer.cs">
+      <DependentUpon>ChuyenNganh.cs</DependentUpon>
+    </Compile>
     <Compile Include="Khoa.cs" />
     <Compile Include="MenuUser\DangKy.cs">
       <SubType>Form</SubType>
@@ -366,6 +378,27 @@
     <Compile Include="ThongTin\TTDeTai_TB.Designer.cs">
       <DependentUpon>TTDeTai_TB.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DangKyTK.resx">
+      <DependentUpon>DangKyTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe\ThongKeCCS.resx">
+      <DependentUpon>ThongKeCCS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe\ThongKeChuyenNganh.resx">
+      <DependentUpon>ThongKeChuyenNganh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe\ThongKeCHV.resx">
+      <DependentUpon>ThongKeCHV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe\ThongKeCNN.resx">
+      <DependentUpon>ThongKeCNN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongKe\ThongKeKhoa.resx">
+      <DependentUpon>ThongKeKhoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThongTin\ChuyenNganh.resx">
+      <DependentUpon>ChuyenNganh.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MenuUser\DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
     </EmbeddedResource>

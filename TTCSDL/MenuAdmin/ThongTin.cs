@@ -37,8 +37,8 @@ namespace TTCSDL
             ChildForm.TopLevel = false;
             ChildForm.FormBorderStyle = FormBorderStyle.None;
             ChildForm.Dock = DockStyle.Fill;
-            panelBody.Controls.Add(ChildForm);
-            panelBody.Tag = ChildForm;
+            btncn.Controls.Add(ChildForm);
+            btncn.Tag = ChildForm;
             ChildForm.BringToFront();
             ChildForm.Show();
         }
@@ -77,5 +77,15 @@ namespace TTCSDL
             btnCapQL.BackColor = Color.Teal;
         }
 
+        private void btnChuyenNganh_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new ChuyenNganh());
+            setBackColorMenuItem(pnlNav, btnChuyenNganh);
+        }
+
+        private void btnChuyenNganh_Leave(object sender, EventArgs e)
+        {
+            btnChuyenNganh.BackColor = Color.Teal;
+        }
     }
 }

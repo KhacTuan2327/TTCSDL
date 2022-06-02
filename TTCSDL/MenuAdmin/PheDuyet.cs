@@ -131,5 +131,11 @@ namespace TTCSDL
             }
             PheDuyet_Load(sender, e);
         }
+
+        private void search_TextChanged(object sender, EventArgs e)
+        {
+            string query = "SEARCH_DT'" + search.Text + "'";
+            dataDeTai.DataSource = modify.Table(query);
+        }
     }
 }

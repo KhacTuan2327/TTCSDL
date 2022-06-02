@@ -79,6 +79,21 @@ namespace TTCSDL
             }
         }
 
+
+        private void search_TextChanged(object sender, EventArgs e)
+        {
+            string name = search.Text.Trim();
+            if (name == "")
+            {
+                DeTai_User_Load(sender, e);
+            }
+            else
+            {
+                string query = "select * from detai where tendt like '%" + name + "%'";
+                dataDeTai.DataSource = modify.Table(query);
+            }
+        }
+
         public DeTai_User(string makhoa, string quyen)
         {
             InitializeComponent();

@@ -101,13 +101,18 @@ namespace TTCSDL
                 if (MessageBox.Show("Bạn có muốn thêm thành viên cho đề tài mới không?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
                     modify.Command(querytg);
-                    MessageBox.Show("Đề tài của bạn đã được đăng ký thành công và chờ quản trị Khoa phê duyệt!");
+                    MessageBox.Show("Thêm thành viên cho đề tài thành công!");
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Cán bộ hiện không có trong danh sách hoặc đề tài chưa được đăng ký, vui lòng kiểm tra lại!");
             }
+        }
+
+        private void DangKy_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
