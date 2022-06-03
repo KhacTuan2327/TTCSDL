@@ -55,7 +55,6 @@ namespace TTCSDL
 
         private bool CheckTextBoxes()
         {
-            if (txtmabc.Text == "") { MessageBox.Show("Vui lòng nhập mã của báo cáo!"); return false; }
             if (txtnd.Text == "") { MessageBox.Show("Vui lòng nhập nội dung báo cáo!"); return false; }
             if (txttd.Text == "") { MessageBox.Show("Vui lòng nhập tiến độ!"); return false; }
             if (timebc.Value == DateTime.Now) { MessageBox.Show("Vui lòng nhập thời gian báo cáo!"); return false; }
@@ -67,7 +66,7 @@ namespace TTCSDL
             if (CheckTextBoxes())
             {
                 GetValuesTextBox();
-                string query = "INSERT INTO BAOCAOTIENDO VALUES('" + Baocao.Mabc + "',N'" + Baocao.Nd + "','" + Baocao.Tdo + "','" + Baocao.Ngaybc + "','" + Baocao.Madt + "')";
+                string query = "INSERT INTO BAOCAOTIENDO VALUES('',N'" + Baocao.Nd + "','" + Baocao.Tdo + "','" + Baocao.Ngaybc + "','" + Baocao.Madt + "')";
                 //
                 try
                 {

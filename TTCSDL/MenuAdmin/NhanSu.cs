@@ -85,7 +85,6 @@ namespace TTCSDL
         }
         private bool CheckTextBoxes()
         {
-            if (txtmacanbo.Text == "") { MessageBox.Show("Vui lòng nhập Mã cán bộ!"); return false; }
             if (txttencanbo.Text == "") { MessageBox.Show("Vui lòng nhập Tên cán bộ!"); return false; }
             if (txtcapbac.Text == "") { MessageBox.Show("Vui lòng nhập cấp bậc!"); return false; }
             if (txtchucvu.Text == "") { MessageBox.Show("Vui lòng nhập chức vụ!"); return false; }
@@ -121,7 +120,7 @@ namespace TTCSDL
             if (CheckTextBoxes())
             {
                 GetValuesTextBox();
-                string query = "INSERT INTO CANBO VALUES (N'" + Nhansu.Id + "', N' " + Nhansu.Name + "',N'" + Nhansu.Ns + "',N'" + Nhansu.Gt + "',N'" + Nhansu.Cb + "',N'" + Nhansu.Cv + "',N'" + Nhansu.Sdt + "',N'" + Nhansu.Mabm + "')";
+                string query = "INSERT INTO CANBO VALUES ('', N' " + Nhansu.Name + "',N'" + Nhansu.Ns + "',N'" + Nhansu.Gt + "',N'" + Nhansu.Cb + "',N'" + Nhansu.Cv + "',N'" + Nhansu.Sdt + "',N'" + Nhansu.Mabm + "')";
 
                 try
                 {
@@ -175,7 +174,7 @@ namespace TTCSDL
                 txtcapbac.Text = datanhansu.SelectedRows[0].Cells[4].Value.ToString();
                 txtchucvu.Text = datanhansu.SelectedRows[0].Cells[5].Value.ToString();
                 txtPhone.Text = datanhansu.SelectedRows[0].Cells[6].Value.ToString();
-                txtmabm.Text = datanhansu.SelectedRows[0].Cells[7].Value.ToString();
+                txtmabm.SelectedItem = datanhansu.SelectedRows[0].Cells[7].Value.ToString();
             }
         }
 
@@ -194,6 +193,7 @@ namespace TTCSDL
                         modify.Command(query);
                         MessageBox.Show("Xóa thành công!");
                         NhanSu_Load(sender, e);
+                        DeleteTextBoxs();
                     }
                 }
                 catch (Exception ex)

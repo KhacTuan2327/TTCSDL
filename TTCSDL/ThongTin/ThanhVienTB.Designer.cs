@@ -314,7 +314,7 @@ namespace TTCSDL
             this.Controls.Add(this.dataDT);
             this.Name = "ThanhVienTB";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ThanhVienTB";
+            this.Text = "Thành viên tiểu ban";
             this.Load += new System.EventHandler(this.ThanhVienTB_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataDT)).EndInit();
             this.ResumeLayout(false);

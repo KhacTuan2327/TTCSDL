@@ -50,7 +50,9 @@ namespace TTCSDL
             this.label5 = new System.Windows.Forms.Label();
             this.txtxt = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.pnlXacThuc.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ControlBox2
@@ -358,12 +360,24 @@ namespace TTCSDL
             this.guna2Elipse1.BorderRadius = 20;
             this.guna2Elipse1.TargetControl = this;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(202, 47);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(10, 18);
+            this.dataGridView1.TabIndex = 61;
+            this.dataGridView1.Visible = false;
+            // 
             // DangKyTK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(573, 692);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pnlXacThuc);
             this.Controls.Add(this.message);
             this.Controls.Add(this.label2);
@@ -387,6 +401,7 @@ namespace TTCSDL
             this.Load += new System.EventHandler(this.DangKyTK_Load);
             this.pnlXacThuc.ResumeLayout(false);
             this.pnlXacThuc.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -414,5 +429,6 @@ namespace TTCSDL
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2TextBox txtxt;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }

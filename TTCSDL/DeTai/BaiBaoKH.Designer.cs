@@ -29,9 +29,9 @@ namespace TTCSDL
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMabb = new Guna.UI2.WinForms.Guna2TextBox();
             this.txttenbb = new Guna.UI2.WinForms.Guna2TextBox();
@@ -44,10 +44,8 @@ namespace TTCSDL
             this.btnDltDT = new FontAwesome.Sharp.IconButton();
             this.btnAddBB = new FontAwesome.Sharp.IconButton();
             this.dtDsBaiBao = new Guna.UI.WinForms.GunaDataGridView();
-            this.txtmanganh = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtchuyennganh = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.txtmanganh = new Guna.UI2.WinForms.Guna2ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtDsBaiBao)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +54,7 @@ namespace TTCSDL
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(15, 333);
+            this.label1.Location = new System.Drawing.Point(14, 384);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 28);
             this.label1.TabIndex = 1;
@@ -74,10 +72,11 @@ namespace TTCSDL
             this.txtMabb.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMabb.ForeColor = System.Drawing.Color.Black;
             this.txtMabb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMabb.Location = new System.Drawing.Point(178, 320);
+            this.txtMabb.Location = new System.Drawing.Point(177, 371);
             this.txtMabb.Name = "txtMabb";
             this.txtMabb.PasswordChar = '\0';
             this.txtMabb.PlaceholderText = "";
+            this.txtMabb.ReadOnly = true;
             this.txtMabb.SelectedText = "";
             this.txtMabb.Size = new System.Drawing.Size(256, 41);
             this.txtMabb.TabIndex = 2;
@@ -94,7 +93,7 @@ namespace TTCSDL
             this.txttenbb.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttenbb.ForeColor = System.Drawing.Color.Black;
             this.txttenbb.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txttenbb.Location = new System.Drawing.Point(243, 252);
+            this.txttenbb.Location = new System.Drawing.Point(271, 258);
             this.txttenbb.Name = "txttenbb";
             this.txttenbb.PasswordChar = '\0';
             this.txttenbb.PlaceholderText = "";
@@ -107,7 +106,7 @@ namespace TTCSDL
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(423, 203);
+            this.label2.Location = new System.Drawing.Point(451, 209);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(121, 28);
             this.label2.TabIndex = 3;
@@ -125,7 +124,7 @@ namespace TTCSDL
             this.txttacgia.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttacgia.ForeColor = System.Drawing.Color.Black;
             this.txttacgia.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txttacgia.Location = new System.Drawing.Point(688, 320);
+            this.txttacgia.Location = new System.Drawing.Point(687, 371);
             this.txttacgia.Name = "txttacgia";
             this.txttacgia.PasswordChar = '\0';
             this.txttacgia.PlaceholderText = "";
@@ -138,7 +137,7 @@ namespace TTCSDL
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(525, 333);
+            this.label3.Location = new System.Drawing.Point(524, 384);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(78, 28);
             this.label3.TabIndex = 5;
@@ -149,7 +148,7 @@ namespace TTCSDL
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(15, 413);
+            this.label5.Location = new System.Drawing.Point(14, 464);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(116, 28);
             this.label5.TabIndex = 9;
@@ -158,7 +157,7 @@ namespace TTCSDL
             // timedang
             // 
             this.timedang.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.timedang.Location = new System.Drawing.Point(178, 418);
+            this.timedang.Location = new System.Drawing.Point(177, 469);
             this.timedang.Name = "timedang";
             this.timedang.Size = new System.Drawing.Size(256, 22);
             this.timedang.TabIndex = 58;
@@ -213,30 +212,30 @@ namespace TTCSDL
             // 
             // dtDsBaiBao
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dtDsBaiBao.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dtDsBaiBao.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dtDsBaiBao.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtDsBaiBao.BackgroundColor = System.Drawing.Color.White;
             this.dtDsBaiBao.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dtDsBaiBao.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dtDsBaiBao.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtDsBaiBao.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtDsBaiBao.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dtDsBaiBao.ColumnHeadersHeight = 32;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dtDsBaiBao.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dtDsBaiBao.DefaultCellStyle = dataGridViewCellStyle6;
             this.dtDsBaiBao.EnableHeadersVisualStyles = false;
             this.dtDsBaiBao.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.dtDsBaiBao.Location = new System.Drawing.Point(12, 21);
@@ -273,77 +272,50 @@ namespace TTCSDL
             this.dtDsBaiBao.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dtDsBaiBao.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtDsBaiBao_CellClick);
             // 
-            // txtmanganh
-            // 
-            this.txtmanganh.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtmanganh.DefaultText = "";
-            this.txtmanganh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtmanganh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtmanganh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtmanganh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtmanganh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtmanganh.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmanganh.ForeColor = System.Drawing.Color.Black;
-            this.txtmanganh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtmanganh.Location = new System.Drawing.Point(688, 399);
-            this.txtmanganh.Name = "txtmanganh";
-            this.txtmanganh.PasswordChar = '\0';
-            this.txtmanganh.PlaceholderText = "";
-            this.txtmanganh.SelectedText = "";
-            this.txtmanganh.Size = new System.Drawing.Size(256, 41);
-            this.txtmanganh.TabIndex = 78;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(529, 412);
+            this.label6.Location = new System.Drawing.Point(528, 463);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(107, 28);
             this.label6.TabIndex = 77;
             this.label6.Text = "Mã ngành";
             // 
-            // txtchuyennganh
+            // txtmanganh
             // 
-            this.txtchuyennganh.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtchuyennganh.DefaultText = "";
-            this.txtchuyennganh.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtchuyennganh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtchuyennganh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtchuyennganh.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtchuyennganh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtchuyennganh.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtchuyennganh.ForeColor = System.Drawing.Color.Black;
-            this.txtchuyennganh.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtchuyennganh.Location = new System.Drawing.Point(334, 510);
-            this.txtchuyennganh.Name = "txtchuyennganh";
-            this.txtchuyennganh.PasswordChar = '\0';
-            this.txtchuyennganh.PlaceholderText = "";
-            this.txtchuyennganh.ReadOnly = true;
-            this.txtchuyennganh.SelectedText = "";
-            this.txtchuyennganh.Size = new System.Drawing.Size(302, 41);
-            this.txtchuyennganh.TabIndex = 80;
-            this.txtchuyennganh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(411, 468);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(147, 28);
-            this.label4.TabIndex = 79;
-            this.label4.Text = "Chuyên ngành";
+            this.txtmanganh.BackColor = System.Drawing.Color.Transparent;
+            this.txtmanganh.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtmanganh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtmanganh.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtmanganh.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtmanganh.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtmanganh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.txtmanganh.ItemHeight = 30;
+            this.txtmanganh.Items.AddRange(new object[] {
+            "4510401",
+            "7480101",
+            "7480201",
+            "7510402",
+            "7520103",
+            "7520114",
+            "7520207",
+            "7520216",
+            "7520503",
+            "7580201",
+            "7580205"});
+            this.txtmanganh.Location = new System.Drawing.Point(687, 455);
+            this.txtmanganh.Name = "txtmanganh";
+            this.txtmanganh.Size = new System.Drawing.Size(256, 36);
+            this.txtmanganh.TabIndex = 135;
+            this.txtmanganh.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // BaiBaoKH
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Teal;
             this.ClientSize = new System.Drawing.Size(956, 650);
-            this.Controls.Add(this.txtchuyennganh);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtmanganh);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.dtDsBaiBao);
@@ -381,9 +353,7 @@ namespace TTCSDL
         private FontAwesome.Sharp.IconButton btnDltDT;
         private FontAwesome.Sharp.IconButton btnAddBB;
         private Guna.UI.WinForms.GunaDataGridView dtDsBaiBao;
-        private Guna.UI2.WinForms.Guna2TextBox txtmanganh;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2TextBox txtchuyennganh;
-        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2ComboBox txtmanganh;
     }
 }

@@ -70,7 +70,6 @@ namespace TTCSDL
 
         private bool CheckTextBoxes()
         {
-            if (txtmabc.Text == "") { MessageBox.Show("Vui lòng nhập mã của quyết định!"); return false; }
             if (txtnd.Text == "") { MessageBox.Show("Vui lòng nhập nội dung quyết định!"); return false; }
             if (txttd.Text == "") { MessageBox.Show("Vui lòng nhập tên quyết định!"); return false; }
             if (timebc.Value == DateTime.Now) { MessageBox.Show("Vui lòng nhập thời gian ban hành!"); return false; }
@@ -82,7 +81,7 @@ namespace TTCSDL
             if (CheckTextBoxes())
             {
                 GetValuesTextBox();
-                string query = "INSERT INTO QUYETDINH VALUES('" + QD.Id + "',N'" + QD.Name + "','" + QD.Nd + "','" + QD.Ngaybh + "','" + QD.Madt + "')";
+                string query = "INSERT INTO QUYETDINH VALUES('',N'" + QD.Name + "','" + QD.Nd + "','" + QD.Ngaybh + "','" + QD.Madt + "')";
                 //
                 try
                 {

@@ -231,9 +231,9 @@ namespace TTCSDL
                 txtmadt.Text = dataDeTai.SelectedRows[0].Cells[0].Value.ToString();
                 txttendt.Text = dataDeTai.SelectedRows[0].Cells[1].Value.ToString();
                 txtchudt.Text = dataDeTai.SelectedRows[0].Cells[2].Value.ToString();
-                txttieuban.Text = dataDeTai.SelectedRows[0].Cells[3].Value.ToString();
-                txtcapql.Text = dataDeTai.SelectedRows[0].Cells[4].Value.ToString();
-                txtnganh.Text = dataDeTai.SelectedRows[0].Cells[5].Value.ToString();
+                txttieuban.SelectedItem = dataDeTai.SelectedRows[0].Cells[3].Value.ToString();
+                txtcapql.SelectedItem = dataDeTai.SelectedRows[0].Cells[4].Value.ToString();
+                txtnganh.SelectedItem = dataDeTai.SelectedRows[0].Cells[5].Value.ToString();
                 timedk.Text = dataDeTai.SelectedRows[0].Cells[6].Value.ToString();
                 txtnam.Text = dataDeTai.SelectedRows[0].Cells[7].Value.ToString();
                 txttt.Text = dataDeTai.SelectedRows[0].Cells[8].Value.ToString();

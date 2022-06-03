@@ -96,8 +96,11 @@ namespace TTCSDL
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            modify = new Modify();
+            string kt = "KTRA_TK'" + user.Text + "'";
             CheckTextBoxes();
             string eml = email.Text;
+            dataGridView1.DataSource = modify.Table(kt);
             try
             {
                 if (eml.Trim() == "")

@@ -314,7 +314,7 @@ namespace TTCSDL
             this.Controls.Add(this.dataDT);
             this.Name = "TTDeTai_TB";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TTDeTai_TB";
+            this.Text = "Đề tài ";
             this.Load += new System.EventHandler(this.TTDeTai_TB_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataDT)).EndInit();
             this.ResumeLayout(false);

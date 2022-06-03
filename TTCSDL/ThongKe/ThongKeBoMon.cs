@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 //using Microsoft.Office.Interop.Excel;
 using app = Microsoft.Office.Interop.Excel.Application;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace TTCSDL
 {
@@ -50,6 +51,22 @@ namespace TTCSDL
         private void ThongKeBoMon_Load(object sender, EventArgs e)
         {
             ShowCombobox();
+            fillChart();
+        }
+
+        private void fillChart()
+        {
+            cnn = Connection.getConnection();
+            DataSet ds = new DataSet();
+            cnn.Open();
+            SqlDataAdapter adapt = new SqlDataAdapter("chartbomon", cnn);
+            adapt.Fill(ds);
+            chart1.DataSource = ds;
+            chart1.Series["Series1"].XValueMember = "tenbm";
+            chart1.Series["Series1"].YValueMembers = "soluongdetai";
+            chart1.Titles.Add("Thống kê số lượng theo Bộ môn");
+            cnn.Close();
+            chart1.Series["Series1"].ChartType = SeriesChartType.Pie;
         }
 
         private void export2Excel(DataGridView g, string tenTap)

@@ -33,6 +33,7 @@ namespace TTCSDL
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtmabm = new Guna.UI2.WinForms.Guna2ComboBox();
             this.btnSave = new FontAwesome.Sharp.IconButton();
             this.btnDelete = new FontAwesome.Sharp.IconButton();
             this.btnAdd = new FontAwesome.Sharp.IconButton();
@@ -48,7 +49,6 @@ namespace TTCSDL
             this.label4 = new System.Windows.Forms.Label();
             this.NgaySinh = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtmabm = new System.Windows.Forms.TextBox();
             this.txtcapbac = new System.Windows.Forms.TextBox();
             this.lbsdt = new System.Windows.Forms.Label();
             this.lbchunhiem = new System.Windows.Forms.Label();
@@ -72,6 +72,7 @@ namespace TTCSDL
             // 
             this.panel1.BackColor = System.Drawing.Color.LightCyan;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.txtmabm);
             this.panel1.Controls.Add(this.btnSave);
             this.panel1.Controls.Add(this.btnDelete);
             this.panel1.Controls.Add(this.btnAdd);
@@ -87,7 +88,6 @@ namespace TTCSDL
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.NgaySinh);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.txtmabm);
             this.panel1.Controls.Add(this.txtcapbac);
             this.panel1.Controls.Add(this.lbsdt);
             this.panel1.Controls.Add(this.lbchunhiem);
@@ -99,6 +99,33 @@ namespace TTCSDL
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(634, 898);
             this.panel1.TabIndex = 0;
+            // 
+            // txtmabm
+            // 
+            this.txtmabm.BackColor = System.Drawing.Color.Transparent;
+            this.txtmabm.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtmabm.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtmabm.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtmabm.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtmabm.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txtmabm.ForeColor = System.Drawing.Color.Black;
+            this.txtmabm.ItemHeight = 30;
+            this.txtmabm.Items.AddRange(new object[] {
+            "CN01",
+            "CN02",
+            "CN03",
+            "CN04",
+            "CN05",
+            "CN06",
+            "HK01",
+            "HK02",
+            "HK03",
+            "HK04"});
+            this.txtmabm.Location = new System.Drawing.Point(226, 538);
+            this.txtmabm.Name = "txtmabm";
+            this.txtmabm.Size = new System.Drawing.Size(388, 36);
+            this.txtmabm.TabIndex = 74;
+            this.txtmabm.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnSave
             // 
@@ -163,6 +190,7 @@ namespace TTCSDL
             // txtPhone
             // 
             this.txtPhone.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtPhone.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPhone.Location = new System.Drawing.Point(226, 460);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhone.Multiline = true;
@@ -173,6 +201,7 @@ namespace TTCSDL
             // txtchucvu
             // 
             this.txtchucvu.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtchucvu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtchucvu.Location = new System.Drawing.Point(226, 389);
             this.txtchucvu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtchucvu.Multiline = true;
@@ -239,6 +268,7 @@ namespace TTCSDL
             this.txttencanbo.AllowDrop = true;
             this.txttencanbo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txttencanbo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txttencanbo.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txttencanbo.Location = new System.Drawing.Point(360, 112);
             this.txttencanbo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttencanbo.Multiline = true;
@@ -261,11 +291,14 @@ namespace TTCSDL
             // txtmacanbo
             // 
             this.txtmacanbo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtmacanbo.BackColor = System.Drawing.Color.White;
             this.txtmacanbo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtmacanbo.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmacanbo.Location = new System.Drawing.Point(360, 50);
             this.txtmacanbo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmacanbo.Multiline = true;
             this.txtmacanbo.Name = "txtmacanbo";
+            this.txtmacanbo.ReadOnly = true;
             this.txtmacanbo.Size = new System.Drawing.Size(254, 39);
             this.txtmacanbo.TabIndex = 61;
             // 
@@ -303,19 +336,10 @@ namespace TTCSDL
             this.label1.TabIndex = 58;
             this.label1.Text = "Ngày sinh";
             // 
-            // txtmabm
-            // 
-            this.txtmabm.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtmabm.Location = new System.Drawing.Point(226, 540);
-            this.txtmabm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtmabm.Multiline = true;
-            this.txtmabm.Name = "txtmabm";
-            this.txtmabm.Size = new System.Drawing.Size(388, 39);
-            this.txtmabm.TabIndex = 56;
-            // 
             // txtcapbac
             // 
             this.txtcapbac.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtcapbac.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtcapbac.Location = new System.Drawing.Point(360, 295);
             this.txtcapbac.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtcapbac.Multiline = true;
@@ -551,7 +575,6 @@ namespace TTCSDL
         private System.Windows.Forms.TextBox txtmacanbo;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtmabm;
         private System.Windows.Forms.TextBox txtcapbac;
         private System.Windows.Forms.Label lbsdt;
         private System.Windows.Forms.Label lbchunhiem;
@@ -570,5 +593,6 @@ namespace TTCSDL
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
         private Guna.UI2.WinForms.Guna2TextBox search;
         internal System.Windows.Forms.DateTimePicker NgaySinh;
+        private Guna.UI2.WinForms.Guna2ComboBox txtmabm;
     }
 }

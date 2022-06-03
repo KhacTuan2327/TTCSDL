@@ -75,6 +75,7 @@ namespace TTCSDL
             this.txtmabc.Name = "txtmabc";
             this.txtmabc.PasswordChar = '\0';
             this.txtmabc.PlaceholderText = "";
+            this.txtmabc.ReadOnly = true;
             this.txtmabc.SelectedText = "";
             this.txtmabc.Size = new System.Drawing.Size(289, 47);
             this.txtmabc.TabIndex = 3;
@@ -263,7 +264,7 @@ namespace TTCSDL
             this.timebc.Size = new System.Drawing.Size(289, 22);
             this.timebc.TabIndex = 81;
             // 
-            // BaoCao
+            // BaoCaoTD
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.Teal;
@@ -280,9 +281,9 @@ namespace TTCSDL
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtmabc);
             this.Controls.Add(this.label1);
-            this.Name = "BaoCao";
+            this.Name = "BaoCaoTD";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BaoCao";
+            this.Text = "Báo cáo";
             this.Load += new System.EventHandler(this.BaoCaoTD_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtDsbc)).EndInit();
             this.ResumeLayout(false);

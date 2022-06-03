@@ -314,7 +314,7 @@ namespace TTCSDL
             this.Controls.Add(this.dataDT);
             this.Name = "TTBoMon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TTBoMon";
+            this.Text = "Bộ môn";
             this.Load += new System.EventHandler(this.TTBoMon_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataDT)).EndInit();
             this.ResumeLayout(false);

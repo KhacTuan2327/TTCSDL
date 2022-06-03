@@ -45,7 +45,7 @@ namespace TTCSDL
                 txtMabb.Text = dtDsBaiBao.SelectedRows[0].Cells[0].Value.ToString();
                 txttenbb.Text = dtDsBaiBao.SelectedRows[0].Cells[1].Value.ToString();
                 txttacgia.Text = dtDsBaiBao.SelectedRows[0].Cells[4].Value.ToString();
-                txtchuyennganh.Text = dtDsBaiBao.SelectedRows[0].Cells[2].Value.ToString();
+                txtmanganh.SelectedItem = dtDsBaiBao.SelectedRows[0].Cells[2].Value.ToString();
                 timedang.Text = dtDsBaiBao.SelectedRows[0].Cells[3].Value.ToString();
             }
         }
@@ -54,7 +54,6 @@ namespace TTCSDL
             txtMabb.Text = "";
             txttenbb.Text = "";
             txttacgia.Text = "";
-            txtchuyennganh.Text = "";
             timedang.Value = DateTime.Now;
             txtmanganh.Text = "";
         }
@@ -72,7 +71,7 @@ namespace TTCSDL
 
         private bool CheckTextBoxes()
         {
-            if (txtMabb.Text == "") { MessageBox.Show("Vui lòng nhập mã của bài báo!"); return false; }
+            //if (txtMabb.Text == "") { MessageBox.Show("Vui lòng nhập mã của bài báo!"); return false; }
             if (txttenbb.Text == "") { MessageBox.Show("Vui lòng nhập tên của bài báo!"); return false; }
             if (txttacgia.Text == "") { MessageBox.Show("Vui lòng nhập tác giả!"); return false; }
             if (timedang.Text == "") { MessageBox.Show("Vui lòng nhập thời gian đăng!"); return false; }
@@ -84,8 +83,9 @@ namespace TTCSDL
         {
             if (CheckTextBoxes())
             {
+                //'" + Baibao.Mabb + "'
                 GetValuesTextBox();
-                string query = "INSERT INTO CONGTRINHNGHIENCUU VALUES ('" + Baibao.Mabb + "',N'" + Baibao.Tenbb + "','" + Baibao.Macn + "','" + Baibao.Ngaydang + "',N'" + Baibao.Tacgia + "','" + Baibao.Madt + "')";
+                string query = "INSERT INTO CONGTRINHNGHIENCUU VALUES ('',N'" + Baibao.Tenbb + "','" + Baibao.Macn + "','" + Baibao.Ngaydang + "',N'" + Baibao.Tacgia + "','" + Baibao.Madt + "')";
                 try
                 {
                     if (MessageBox.Show("Bạn có muốn thêm vào không?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)

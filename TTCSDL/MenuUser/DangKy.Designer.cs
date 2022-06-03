@@ -32,6 +32,9 @@ namespace TTCSDL
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txttt = new System.Windows.Forms.TextBox();
@@ -58,8 +61,10 @@ namespace TTCSDL
             this.pnlthemtv = new Guna.UI2.WinForms.Guna2Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.dataDeTai = new Guna.UI.WinForms.GunaDataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).BeginInit();
             this.pnlthemtv.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataDeTai)).BeginInit();
             this.SuspendLayout();
             // 
             // label7
@@ -68,7 +73,7 @@ namespace TTCSDL
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Teal;
-            this.label7.Location = new System.Drawing.Point(749, 303);
+            this.label7.Location = new System.Drawing.Point(763, 384);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(137, 30);
             this.label7.TabIndex = 127;
@@ -80,7 +85,7 @@ namespace TTCSDL
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Teal;
-            this.label4.Location = new System.Drawing.Point(93, 502);
+            this.label4.Location = new System.Drawing.Point(107, 583);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(161, 30);
             this.label4.TabIndex = 125;
@@ -90,7 +95,7 @@ namespace TTCSDL
             // 
             this.txttt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txttt.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.txttt.Location = new System.Drawing.Point(612, 667);
+            this.txttt.Location = new System.Drawing.Point(612, 700);
             this.txttt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttt.Multiline = true;
             this.txttt.Name = "txttt";
@@ -105,7 +110,7 @@ namespace TTCSDL
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Teal;
-            this.label3.Location = new System.Drawing.Point(738, 603);
+            this.label3.Location = new System.Drawing.Point(738, 653);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 30);
             this.label3.TabIndex = 123;
@@ -115,7 +120,7 @@ namespace TTCSDL
             // 
             this.txtnam.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtnam.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.txtnam.Location = new System.Drawing.Point(968, 362);
+            this.txtnam.Location = new System.Drawing.Point(982, 443);
             this.txtnam.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtnam.Multiline = true;
             this.txtnam.Name = "txtnam";
@@ -128,7 +133,7 @@ namespace TTCSDL
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(748, 362);
+            this.label1.Location = new System.Drawing.Point(762, 443);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(166, 30);
             this.label1.TabIndex = 121;
@@ -138,7 +143,7 @@ namespace TTCSDL
             // 
             this.txtkinhphi.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtkinhphi.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.txtkinhphi.Location = new System.Drawing.Point(968, 488);
+            this.txtkinhphi.Location = new System.Drawing.Point(982, 569);
             this.txtkinhphi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtkinhphi.Multiline = true;
             this.txtkinhphi.Name = "txtkinhphi";
@@ -151,7 +156,7 @@ namespace TTCSDL
             this.lbdiachi.AutoSize = true;
             this.lbdiachi.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbdiachi.ForeColor = System.Drawing.Color.Teal;
-            this.lbdiachi.Location = new System.Drawing.Point(748, 503);
+            this.lbdiachi.Location = new System.Drawing.Point(762, 584);
             this.lbdiachi.Name = "lbdiachi";
             this.lbdiachi.Size = new System.Drawing.Size(98, 30);
             this.lbdiachi.TabIndex = 119;
@@ -161,7 +166,7 @@ namespace TTCSDL
             // 
             this.txtchudt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txtchudt.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.txtchudt.Location = new System.Drawing.Point(313, 349);
+            this.txtchudt.Location = new System.Drawing.Point(327, 430);
             this.txtchudt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtchudt.Multiline = true;
             this.txtchudt.Name = "txtchudt";
@@ -174,7 +179,7 @@ namespace TTCSDL
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Teal;
-            this.label5.Location = new System.Drawing.Point(92, 361);
+            this.label5.Location = new System.Drawing.Point(106, 442);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(121, 30);
             this.label5.TabIndex = 117;
@@ -183,11 +188,13 @@ namespace TTCSDL
             // txtmadt
             // 
             this.txtmadt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtmadt.BackColor = System.Drawing.Color.White;
             this.txtmadt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtmadt.Location = new System.Drawing.Point(313, 286);
+            this.txtmadt.Location = new System.Drawing.Point(327, 367);
             this.txtmadt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtmadt.Multiline = true;
             this.txtmadt.Name = "txtmadt";
+            this.txtmadt.ReadOnly = true;
             this.txtmadt.Size = new System.Drawing.Size(382, 46);
             this.txtmadt.TabIndex = 116;
             // 
@@ -197,7 +204,7 @@ namespace TTCSDL
             this.lbmakhoa.AutoSize = true;
             this.lbmakhoa.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbmakhoa.ForeColor = System.Drawing.Color.Teal;
-            this.lbmakhoa.Location = new System.Drawing.Point(92, 303);
+            this.lbmakhoa.Location = new System.Drawing.Point(106, 384);
             this.lbmakhoa.Name = "lbmakhoa";
             this.lbmakhoa.Size = new System.Drawing.Size(115, 30);
             this.lbmakhoa.TabIndex = 115;
@@ -206,7 +213,7 @@ namespace TTCSDL
             // timedk
             // 
             this.timedk.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.timedk.Location = new System.Drawing.Point(968, 435);
+            this.timedk.Location = new System.Drawing.Point(982, 516);
             this.timedk.Name = "timedk";
             this.timedk.Size = new System.Drawing.Size(382, 22);
             this.timedk.TabIndex = 113;
@@ -217,7 +224,7 @@ namespace TTCSDL
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Teal;
-            this.label6.Location = new System.Drawing.Point(94, 427);
+            this.label6.Location = new System.Drawing.Point(108, 508);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(171, 30);
             this.label6.TabIndex = 112;
@@ -227,7 +234,7 @@ namespace TTCSDL
             // 
             this.txttendt.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txttendt.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttendt.Location = new System.Drawing.Point(470, 141);
+            this.txttendt.Location = new System.Drawing.Point(488, 296);
             this.txttendt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttendt.Multiline = true;
             this.txttendt.Name = "txttendt";
@@ -240,7 +247,7 @@ namespace TTCSDL
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Teal;
-            this.label8.Location = new System.Drawing.Point(738, 95);
+            this.label8.Location = new System.Drawing.Point(756, 250);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(118, 30);
             this.label8.TabIndex = 110;
@@ -252,7 +259,7 @@ namespace TTCSDL
             this.lbchunhiem.AutoSize = true;
             this.lbchunhiem.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbchunhiem.ForeColor = System.Drawing.Color.Teal;
-            this.lbchunhiem.Location = new System.Drawing.Point(749, 429);
+            this.lbchunhiem.Location = new System.Drawing.Point(763, 510);
             this.lbchunhiem.Name = "lbchunhiem";
             this.lbchunhiem.Size = new System.Drawing.Size(157, 30);
             this.lbchunhiem.TabIndex = 109;
@@ -286,7 +293,7 @@ namespace TTCSDL
             this.guna2DataGridView2.DefaultCellStyle = dataGridViewCellStyle3;
             this.guna2DataGridView2.EnableHeadersVisualStyles = false;
             this.guna2DataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView2.Location = new System.Drawing.Point(827, 173);
+            this.guna2DataGridView2.Location = new System.Drawing.Point(845, 328);
             this.guna2DataGridView2.Name = "guna2DataGridView2";
             this.guna2DataGridView2.RowHeadersVisible = false;
             this.guna2DataGridView2.RowHeadersWidth = 62;
@@ -323,7 +330,7 @@ namespace TTCSDL
             this.btnAddDT.IconColor = System.Drawing.Color.Black;
             this.btnAddDT.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnAddDT.IconSize = 30;
-            this.btnAddDT.Location = new System.Drawing.Point(743, 775);
+            this.btnAddDT.Location = new System.Drawing.Point(743, 808);
             this.btnAddDT.Name = "btnAddDT";
             this.btnAddDT.Size = new System.Drawing.Size(124, 52);
             this.btnAddDT.TabIndex = 131;
@@ -349,7 +356,7 @@ namespace TTCSDL
             "CCS",
             "CHV",
             "CNN"});
-            this.txtcapql.Location = new System.Drawing.Point(313, 420);
+            this.txtcapql.Location = new System.Drawing.Point(327, 501);
             this.txtcapql.Name = "txtcapql";
             this.txtcapql.Size = new System.Drawing.Size(382, 36);
             this.txtcapql.TabIndex = 133;
@@ -377,7 +384,7 @@ namespace TTCSDL
             "7520503",
             "7580201",
             "7580205"});
-            this.txtnganh.Location = new System.Drawing.Point(313, 496);
+            this.txtnganh.Location = new System.Drawing.Point(327, 577);
             this.txtnganh.Name = "txtnganh";
             this.txtnganh.Size = new System.Drawing.Size(382, 36);
             this.txtnganh.TabIndex = 134;
@@ -399,7 +406,7 @@ namespace TTCSDL
             "TB03",
             "TB04",
             "TB06"});
-            this.txttieuban.Location = new System.Drawing.Point(968, 296);
+            this.txttieuban.Location = new System.Drawing.Point(982, 377);
             this.txttieuban.Name = "txttieuban";
             this.txttieuban.Size = new System.Drawing.Size(382, 36);
             this.txttieuban.TabIndex = 135;
@@ -427,7 +434,7 @@ namespace TTCSDL
             this.pnlthemtv.Controls.Add(this.label9);
             this.pnlthemtv.Controls.Add(this.label2);
             this.pnlthemtv.Controls.Add(this.btnthemtv);
-            this.pnlthemtv.Location = new System.Drawing.Point(1035, 597);
+            this.pnlthemtv.Location = new System.Drawing.Point(1035, 630);
             this.pnlthemtv.Name = "pnlthemtv";
             this.pnlthemtv.Size = new System.Drawing.Size(457, 258);
             this.pnlthemtv.TabIndex = 137;
@@ -452,11 +459,74 @@ namespace TTCSDL
             this.label2.TabIndex = 138;
             this.label2.Text = "Chú ý:";
             // 
+            // dataDeTai
+            // 
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dataDeTai.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataDeTai.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataDeTai.BackgroundColor = System.Drawing.Color.White;
+            this.dataDeTai.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dataDeTai.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataDeTai.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataDeTai.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dataDeTai.ColumnHeadersHeight = 32;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataDeTai.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dataDeTai.EnableHeadersVisualStyles = false;
+            this.dataDeTai.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataDeTai.Location = new System.Drawing.Point(12, 22);
+            this.dataDeTai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataDeTai.Name = "dataDeTai";
+            this.dataDeTai.ReadOnly = true;
+            this.dataDeTai.RowHeadersVisible = false;
+            this.dataDeTai.RowHeadersWidth = 62;
+            this.dataDeTai.RowTemplate.Height = 28;
+            this.dataDeTai.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dataDeTai.Size = new System.Drawing.Size(1508, 211);
+            this.dataDeTai.TabIndex = 138;
+            this.dataDeTai.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.dataDeTai.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataDeTai.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.dataDeTai.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.dataDeTai.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.dataDeTai.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.dataDeTai.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dataDeTai.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataDeTai.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.dataDeTai.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dataDeTai.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dataDeTai.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.dataDeTai.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.dataDeTai.ThemeStyle.HeaderStyle.Height = 32;
+            this.dataDeTai.ThemeStyle.ReadOnly = true;
+            this.dataDeTai.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.dataDeTai.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.dataDeTai.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.dataDeTai.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataDeTai.ThemeStyle.RowsStyle.Height = 28;
+            this.dataDeTai.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.dataDeTai.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataDeTai.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataDeTai_CellClick);
+            // 
             // DangKy
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightCyan;
             this.ClientSize = new System.Drawing.Size(1532, 898);
+            this.Controls.Add(this.dataDeTai);
             this.Controls.Add(this.pnlthemtv);
             this.Controls.Add(this.txttieuban);
             this.Controls.Add(this.txtnganh);
@@ -487,6 +557,7 @@ namespace TTCSDL
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).EndInit();
             this.pnlthemtv.ResumeLayout(false);
             this.pnlthemtv.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataDeTai)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -519,5 +590,6 @@ namespace TTCSDL
         private Guna.UI2.WinForms.Guna2Panel pnlthemtv;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label2;
+        private Guna.UI.WinForms.GunaDataGridView dataDeTai;
     }
 }

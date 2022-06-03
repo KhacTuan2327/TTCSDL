@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 //using Microsoft.Office.Interop.Excel;
 using app = Microsoft.Office.Interop.Excel.Application;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace TTCSDL
 {
@@ -48,6 +49,22 @@ namespace TTCSDL
         private void ThongKeChuyenNganh_Load(object sender, EventArgs e)
         {
             ShowCombobox();
+            fillChart();
+        }
+
+        private void fillChart()
+        {
+            cnn = Connection.getConnection();
+            DataSet ds = new DataSet();
+            cnn.Open();
+            SqlDataAdapter adapt = new SqlDataAdapter("chartchuyennganh", cnn);
+            adapt.Fill(ds);
+            chart1.DataSource = ds;
+            chart1.Series["Series1"].XValueMember = "tencn";
+            chart1.Series["Series1"].YValueMembers = "soluongchuyennganh";
+            chart1.Titles.Add("Thống kê số lượng theo Chuyên ngành");
+            cnn.Close();
+            chart1.Series["Series1"].ChartType = SeriesChartType.Pie;
         }
 
         private void export2Excel(DataGridView g, string tenTap)
@@ -99,6 +116,11 @@ namespace TTCSDL
         {
             string query = "SEARCH_DT'" + search.Text + "'";
             dataTK.DataSource = modify.Table(query);
+        }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

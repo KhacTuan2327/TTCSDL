@@ -163,6 +163,7 @@ namespace TTCSDL
             // txtmadt
             // 
             this.txtmadt.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtmadt.BackColor = System.Drawing.Color.White;
             this.txtmadt.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtmadt.Location = new System.Drawing.Point(330, 561);
             this.txtmadt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -199,6 +200,7 @@ namespace TTCSDL
             // txtChuDT
             // 
             this.txtChuDT.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtChuDT.BackColor = System.Drawing.Color.White;
             this.txtChuDT.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtChuDT.Location = new System.Drawing.Point(330, 634);
             this.txtChuDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -277,6 +279,7 @@ namespace TTCSDL
             // txtCNganh
             // 
             this.txtCNganh.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtCNganh.BackColor = System.Drawing.Color.White;
             this.txtCNganh.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCNganh.Location = new System.Drawing.Point(330, 706);
             this.txtCNganh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -289,6 +292,7 @@ namespace TTCSDL
             // txtTenDT
             // 
             this.txtTenDT.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTenDT.BackColor = System.Drawing.Color.White;
             this.txtTenDT.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenDT.Location = new System.Drawing.Point(1027, 542);
             this.txtTenDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
