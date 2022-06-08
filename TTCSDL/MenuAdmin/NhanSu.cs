@@ -205,16 +205,17 @@ namespace TTCSDL
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //MACB AS 'Mã cán bộ' N' " + Nhansu.Id + "',TENCB AS 'Họ và tên' N' " + Nhansu.Name + "', NGAYSINH AS 'Ngày sinh' N'" + Nhansu.Ns + "',GIOITINH AS 'Giới tính' N'" + Nhansu.Gt + "',CAPBAC AS 'Cấp bậc' N'" + Nhansu.Cb + "', CHUCVU AS 'Cấp bậc' N'" + Nhansu.Cv + "',SĐT AS 'Số điện thoại' N'" + Nhansu.Tgtg + "',THOIGIANTHAMGIA AS 'Thời gian tham gia' N'" + Nhansu.Sdt + "',MABM AS 'Mã bộ môn' N'" + Nhansu.Mabm + "'
+            //
             if (datanhansu.Rows.Count > 1)
             {
                 string choose = datanhansu.SelectedRows[0].Cells[0].Value.ToString();
-                
+                string query = "SUA_CB'MACB AS 'Mã cán bộ' N' " + Nhansu.Id + "',TENCB AS 'Họ và tên' N' " + Nhansu.Name + "', NGAYSINH AS 'Ngày sinh' N'" + Nhansu.Ns + "',GIOITINH AS 'Giới tính' N'" + Nhansu.Gt + "',CAPBAC AS 'Cấp bậc' N'" + Nhansu.Cb + "', CHUCVU AS 'Cấp bậc' N'" + Nhansu.Cv + "',THOIGIANTHAMGIA AS 'Thời gian tham gia' N'" + Nhansu.Sdt + "',MABM AS 'Mã bộ môn' N'" + Nhansu.Mabm + "''";
 
                 try //insert into khoa value ('khoa.Id', "N'Khoa.name'"
                 {
                     if (MessageBox.Show("Bạn có muốn lưu không?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                     {
+                        modify.Command(query);
                         MessageBox.Show("Lưu thành công!");
                         NhanSu_Load(sender, e);
                     }
