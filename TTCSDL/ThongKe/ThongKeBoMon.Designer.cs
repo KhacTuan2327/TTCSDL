@@ -68,7 +68,7 @@ namespace TTCSDL
             this.lbSLK.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.lbSLK.Location = new System.Drawing.Point(662, 148);
             this.lbSLK.Name = "lbSLK";
-            this.lbSLK.Size = new System.Drawing.Size(23, 28);
+            this.lbSLK.Size = new System.Drawing.Size(19, 23);
             this.lbSLK.TabIndex = 128;
             this.lbSLK.Text = "0";
             // 
@@ -79,7 +79,7 @@ namespace TTCSDL
             this.lbSLG.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.lbSLG.Location = new System.Drawing.Point(663, 116);
             this.lbSLG.Name = "lbSLG";
-            this.lbSLG.Size = new System.Drawing.Size(23, 28);
+            this.lbSLG.Size = new System.Drawing.Size(19, 23);
             this.lbSLG.TabIndex = 127;
             this.lbSLG.Text = "0";
             // 
@@ -90,7 +90,7 @@ namespace TTCSDL
             this.lbSL.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.lbSL.Location = new System.Drawing.Point(164, 116);
             this.lbSL.Name = "lbSL";
-            this.lbSL.Size = new System.Drawing.Size(23, 28);
+            this.lbSL.Size = new System.Drawing.Size(19, 23);
             this.lbSL.TabIndex = 126;
             this.lbSL.Text = "0";
             // 
@@ -101,7 +101,7 @@ namespace TTCSDL
             this.lbSLB.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.lbSLB.Location = new System.Drawing.Point(440, 146);
             this.lbSLB.Name = "lbSLB";
-            this.lbSLB.Size = new System.Drawing.Size(23, 28);
+            this.lbSLB.Size = new System.Drawing.Size(19, 23);
             this.lbSLB.TabIndex = 125;
             this.lbSLB.Text = "0";
             // 
@@ -112,7 +112,7 @@ namespace TTCSDL
             this.lbSLHV.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.lbSLHV.Location = new System.Drawing.Point(440, 174);
             this.lbSLHV.Name = "lbSLHV";
-            this.lbSLHV.Size = new System.Drawing.Size(23, 28);
+            this.lbSLHV.Size = new System.Drawing.Size(19, 23);
             this.lbSLHV.TabIndex = 124;
             this.lbSLHV.Text = "0";
             // 
@@ -123,7 +123,7 @@ namespace TTCSDL
             this.lbSLCS.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.lbSLCS.Location = new System.Drawing.Point(440, 205);
             this.lbSLCS.Name = "lbSLCS";
-            this.lbSLCS.Size = new System.Drawing.Size(23, 28);
+            this.lbSLCS.Size = new System.Drawing.Size(19, 23);
             this.lbSLCS.TabIndex = 123;
             this.lbSLCS.Text = "0";
             // 
@@ -134,7 +134,7 @@ namespace TTCSDL
             this.lbSLNN.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.lbSLNN.Location = new System.Drawing.Point(440, 116);
             this.lbSLNN.Name = "lbSLNN";
-            this.lbSLNN.Size = new System.Drawing.Size(23, 28);
+            this.lbSLNN.Size = new System.Drawing.Size(19, 23);
             this.lbSLNN.TabIndex = 122;
             this.lbSLNN.Text = "0";
             // 
@@ -145,7 +145,7 @@ namespace TTCSDL
             this.bo.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.bo.Location = new System.Drawing.Point(197, 144);
             this.bo.Name = "bo";
-            this.bo.Size = new System.Drawing.Size(170, 30);
+            this.bo.Size = new System.Drawing.Size(147, 25);
             this.bo.TabIndex = 120;
             this.bo.Text = "Số đề tài cấp Bộ";
             // 
@@ -156,7 +156,7 @@ namespace TTCSDL
             this.coso.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.coso.Location = new System.Drawing.Point(197, 204);
             this.coso.Name = "coso";
-            this.coso.Size = new System.Drawing.Size(199, 30);
+            this.coso.Size = new System.Drawing.Size(172, 25);
             this.coso.TabIndex = 119;
             this.coso.Text = "Số đề tài cấp Cơ sở";
             // 
@@ -167,7 +167,7 @@ namespace TTCSDL
             this.label1.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label1.Location = new System.Drawing.Point(14, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(227, 30);
+            this.label1.Size = new System.Drawing.Size(198, 25);
             this.label1.TabIndex = 118;
             this.label1.Text = "Chọn Bộ môn quản lý:";
             // 
@@ -178,7 +178,7 @@ namespace TTCSDL
             this.label8.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label8.Location = new System.Drawing.Point(469, 146);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(187, 30);
+            this.label8.Size = new System.Drawing.Size(162, 25);
             this.label8.TabIndex = 117;
             this.label8.Text = "Số đề tài loại KHÁ";
             // 
@@ -189,7 +189,7 @@ namespace TTCSDL
             this.hocvien.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.hocvien.Location = new System.Drawing.Point(197, 174);
             this.hocvien.Name = "hocvien";
-            this.hocvien.Size = new System.Drawing.Size(229, 30);
+            this.hocvien.Size = new System.Drawing.Size(198, 25);
             this.hocvien.TabIndex = 116;
             this.hocvien.Text = "Số đề tài cấp Học viện";
             // 
@@ -200,7 +200,7 @@ namespace TTCSDL
             this.label5.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label5.Location = new System.Drawing.Point(103, 161);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(0, 30);
+            this.label5.Size = new System.Drawing.Size(0, 25);
             this.label5.TabIndex = 115;
             // 
             // nhanuoc
@@ -210,7 +210,7 @@ namespace TTCSDL
             this.nhanuoc.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.nhanuoc.Location = new System.Drawing.Point(197, 114);
             this.nhanuoc.Name = "nhanuoc";
-            this.nhanuoc.Size = new System.Drawing.Size(237, 30);
+            this.nhanuoc.Size = new System.Drawing.Size(207, 25);
             this.nhanuoc.TabIndex = 114;
             this.nhanuoc.Text = "Số đề tài cấp Nhà nước";
             // 
@@ -221,7 +221,7 @@ namespace TTCSDL
             this.label3.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label3.Location = new System.Drawing.Point(469, 116);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(188, 30);
+            this.label3.Size = new System.Drawing.Size(163, 25);
             this.label3.TabIndex = 113;
             this.label3.Text = "Số đề tài loại GIỎI";
             // 
@@ -232,7 +232,7 @@ namespace TTCSDL
             this.soluong.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.soluong.Location = new System.Drawing.Point(14, 114);
             this.soluong.Name = "soluong";
-            this.soluong.Size = new System.Drawing.Size(153, 30);
+            this.soluong.Size = new System.Drawing.Size(133, 25);
             this.soluong.TabIndex = 112;
             this.soluong.Text = "Tổng số lượng";
             // 
@@ -242,7 +242,7 @@ namespace TTCSDL
             this.cbbbm.FormattingEnabled = true;
             this.cbbbm.Location = new System.Drawing.Point(12, 56);
             this.cbbbm.Name = "cbbbm";
-            this.cbbbm.Size = new System.Drawing.Size(644, 37);
+            this.cbbbm.Size = new System.Drawing.Size(644, 33);
             this.cbbbm.TabIndex = 111;
             this.cbbbm.SelectedIndexChanged += new System.EventHandler(this.cbbbm_SelectedIndexChanged);
             // 
@@ -368,6 +368,7 @@ namespace TTCSDL
             this.chart1.Size = new System.Drawing.Size(476, 335);
             this.chart1.TabIndex = 129;
             this.chart1.Text = "chart1";
+            this.chart1.Click += new System.EventHandler(this.chart1_Click);
             // 
             // ThongKeBoMon
             // 

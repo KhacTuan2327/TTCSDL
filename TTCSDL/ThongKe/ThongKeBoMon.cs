@@ -191,5 +191,10 @@ namespace TTCSDL
             string query = "SEARCH_DT'" + search.Text + "'";
             dataTK.DataSource = modify.Table(query);
         }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

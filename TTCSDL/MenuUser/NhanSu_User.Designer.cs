@@ -176,12 +176,12 @@ namespace TTCSDL
             // rdoNu
             // 
             this.rdoNu.AutoSize = true;
-            this.rdoNu.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoNu.ForeColor = System.Drawing.Color.White;
+            this.rdoNu.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoNu.ForeColor = System.Drawing.Color.Teal;
             this.rdoNu.Location = new System.Drawing.Point(550, 606);
             this.rdoNu.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rdoNu.Name = "rdoNu";
-            this.rdoNu.Size = new System.Drawing.Size(61, 29);
+            this.rdoNu.Size = new System.Drawing.Size(66, 35);
             this.rdoNu.TabIndex = 113;
             this.rdoNu.TabStop = true;
             this.rdoNu.Text = "Nữ";
@@ -190,12 +190,12 @@ namespace TTCSDL
             // rdoNam
             // 
             this.rdoNam.AutoSize = true;
-            this.rdoNam.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rdoNam.ForeColor = System.Drawing.Color.White;
+            this.rdoNam.Font = new System.Drawing.Font("Segoe UI", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdoNam.ForeColor = System.Drawing.Color.Teal;
             this.rdoNam.Location = new System.Drawing.Point(418, 606);
             this.rdoNam.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.rdoNam.Name = "rdoNam";
-            this.rdoNam.Size = new System.Drawing.Size(75, 29);
+            this.rdoNam.Size = new System.Drawing.Size(84, 35);
             this.rdoNam.TabIndex = 112;
             this.rdoNam.TabStop = true;
             this.rdoNam.Text = "Nam";

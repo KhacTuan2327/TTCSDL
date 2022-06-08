@@ -40,10 +40,6 @@ namespace TTCSDL
             return dr;
         }
 
-        private void dataTK_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
 
         private void export2Excel(DataGridView g, string tenTap)
         {
@@ -72,6 +68,16 @@ namespace TTCSDL
         }
 
         private void ThongKeCB_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataTK_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void search_TextChanged(object sender, EventArgs e)
         {
             string query = "SEARCH_DT'" + search.Text + "'";
             dataTK.DataSource = modify.Table(query);

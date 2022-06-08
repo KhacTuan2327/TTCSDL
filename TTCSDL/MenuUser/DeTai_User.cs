@@ -94,6 +94,12 @@ namespace TTCSDL
             }
         }
 
+        private void dataDeTai_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            TTThanhVien_PD tTThanhVien_PD = new TTThanhVien_PD(txtmadt.Text);
+            tTThanhVien_PD.ShowDialog();
+        }
+
         public DeTai_User(string makhoa, string quyen)
         {
             InitializeComponent();

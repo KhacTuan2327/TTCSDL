@@ -54,7 +54,7 @@ namespace TTCSDL
             this.cbbnganh.FormattingEnabled = true;
             this.cbbnganh.Location = new System.Drawing.Point(27, 58);
             this.cbbnganh.Name = "cbbnganh";
-            this.cbbnganh.Size = new System.Drawing.Size(644, 37);
+            this.cbbnganh.Size = new System.Drawing.Size(644, 33);
             this.cbbnganh.TabIndex = 89;
             this.cbbnganh.SelectedIndexChanged += new System.EventHandler(this.cbbkhoa_SelectedIndexChanged);
             // 
@@ -65,7 +65,7 @@ namespace TTCSDL
             this.label1.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.label1.Location = new System.Drawing.Point(11, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(214, 30);
+            this.label1.Size = new System.Drawing.Size(189, 25);
             this.label1.TabIndex = 98;
             this.label1.Text = "Chọn Chuyên ngành:";
             // 
@@ -86,7 +86,7 @@ namespace TTCSDL
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataTK.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataTK.ColumnHeadersHeight = 32;
+            this.dataTK.ColumnHeadersHeight = 50;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -120,7 +120,7 @@ namespace TTCSDL
             this.dataTK.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataTK.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dataTK.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dataTK.ThemeStyle.HeaderStyle.Height = 32;
+            this.dataTK.ThemeStyle.HeaderStyle.Height = 50;
             this.dataTK.ThemeStyle.ReadOnly = true;
             this.dataTK.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dataTK.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -137,7 +137,7 @@ namespace TTCSDL
             this.lbSL.ForeColor = System.Drawing.Color.DarkSlateBlue;
             this.lbSL.Location = new System.Drawing.Point(291, 115);
             this.lbSL.Name = "lbSL";
-            this.lbSL.Size = new System.Drawing.Size(23, 28);
+            this.lbSL.Size = new System.Drawing.Size(19, 23);
             this.lbSL.TabIndex = 130;
             this.lbSL.Text = "0";
             // 
@@ -148,7 +148,7 @@ namespace TTCSDL
             this.soluong.ForeColor = System.Drawing.Color.DarkBlue;
             this.soluong.Location = new System.Drawing.Point(72, 115);
             this.soluong.Name = "soluong";
-            this.soluong.Size = new System.Drawing.Size(213, 30);
+            this.soluong.Size = new System.Drawing.Size(185, 25);
             this.soluong.TabIndex = 129;
             this.soluong.Text = "Tổng số lượng đề tài";
             // 

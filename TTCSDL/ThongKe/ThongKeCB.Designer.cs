@@ -86,6 +86,7 @@ namespace TTCSDL
             this.search.SelectedText = "";
             this.search.Size = new System.Drawing.Size(320, 47);
             this.search.TabIndex = 132;
+            this.search.TextChanged += new System.EventHandler(this.search_TextChanged);
             // 
             // btnExportFile
             // 
@@ -178,6 +179,7 @@ namespace TTCSDL
             this.dataTK.ThemeStyle.RowsStyle.Height = 28;
             this.dataTK.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataTK.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataTK.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataTK_CellContentClick_1);
             // 
             // ThongKeCB
             // 

@@ -188,7 +188,7 @@ namespace TTCSDL
 
         private void search_TextChanged(object sender, EventArgs e)
         {
-            string query = "SEARCH_DT'" + search.Text + "'";
+            string query = "search_tkkhoa N'%" + search.Text + "%'";
             dataTK.DataSource = modify.Table(query);
         }
     }

@@ -140,7 +140,7 @@ namespace TTCSDL
         private void btnSave_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Bạn có muốn Lưu không?");
-            /*if (CheckTextBoxes())
+            if (CheckTextBoxes())
             {
                 GetValuesTextBox();
                 string query = "UPDATE DETAI SET MADT = N'" + dt.Madt + " ', Tendt = N'" + dt.Tendt + " ', KINHPHI = N' " + dt.Kinhphi + "', NGAYDANGKI = N'" + dt.Ngaydangky + "', NAMTHUCHIEN = N'" + dt.Nam + "', TIENDO = N'" + dt.Tiendo + "', TRANGTHAI = N'" + dt.Trangthai + "', MATB = N'" + dt.Tieuban + "', MANGANH = N'" + dt.Tennganh + "', MACAP = N'" + dt.Capql + "', MACB = N'" + dt.Chudt + "'";
@@ -159,7 +159,7 @@ namespace TTCSDL
                 {
                     MessageBox.Show("Lỗi sửa: " + ex.Message);
                 }
-            }*/
+            }
         }
 
         private void btnDltDT_Click(object sender, EventArgs e)
@@ -222,6 +222,12 @@ namespace TTCSDL
         private void dataDeTai_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void dataDeTai_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            TTThanhVien_PD tTThanhVien_PD = new TTThanhVien_PD(txtmadt.Text);
+            tTThanhVien_PD.ShowDialog();
         }
 
         private void dataDeTai_CellClick(object sender, DataGridViewCellEventArgs e)
